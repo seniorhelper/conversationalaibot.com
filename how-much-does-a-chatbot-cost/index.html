@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Much Does a Chatbot Cost in 2026? Every Pricing Model Explained</title>
+<meta name="description" content="Chatbot pricing runs from $0 to five figures, and the billable unit matters more than the sticker price. The five pricing models, the per-resolution growth trap, the hidden fees, and where the free option actually fits.">
+<link rel="canonical" href="https://conversationalaibot.com/how-much-does-a-chatbot-cost/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#050A18">
+<link rel="icon" href="/images/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="conversationalaibot.com">
+<meta property="og:url" content="https://conversationalaibot.com/how-much-does-a-chatbot-cost/">
+<meta property="og:title" content="How Much Does a Chatbot Cost in 2026? Every Pricing Model Explained">
+<meta property="og:description" content="The billable unit decides your bill, not the sticker price. Compare all five models at your own volume.">
+<meta property="og:image" content="https://conversationalaibot.com/images/chatbot-ad-banner-social.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Much Does a Chatbot Cost in 2026?">
+<meta name="twitter:image" content="https://conversationalaibot.com/images/chatbot-ad-banner-social.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://conversationalaibot.com/#org","name":"conversationalaibot.com","url":"https://conversationalaibot.com/","logo":"https://conversationalaibot.com/images/conversational-ai-bot-logo.png","telephone":"+1-800-481-8638","address":{"@type":"PostalAddress","streetAddress":"1001 Bannock St #660","addressLocality":"Denver","addressRegion":"CO","postalCode":"80204","addressCountry":"US"}},
+{"@type":"BreadcrumbList","itemListElement":[
+ {"@type":"ListItem","position":1,"name":"Home","item":"https://conversationalaibot.com/"},
+ {"@type":"ListItem","position":2,"name":"How much does a chatbot cost","item":"https://conversationalaibot.com/how-much-does-a-chatbot-cost/"}]},
+{"@type":"Article","headline":"How Much Does a Chatbot Cost in 2026?","description":"The five chatbot pricing models, where each one turns expensive, the hidden fees that do not appear on pricing pages, and how to forecast your real bill.","author":{"@id":"https://conversationalaibot.com/#org"},"publisher":{"@id":"https://conversationalaibot.com/#org"},"mainEntityOfPage":"https://conversationalaibot.com/how-much-does-a-chatbot-cost/","dateModified":"2026-09-11"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How much does a chatbot cost per month?","acceptedAnswer":{"@type":"Answer","text":"Entry flat-rate plans start around 14 to 16 dollars a month billed annually. Seat-based suites run roughly 55 to 115 dollars per agent per month. Usage models charge about 40 cents to a dollar per conversation or resolution. A rule-based chatbot you host yourself costs nothing per month because there is no server call to meter."}},
+{"@type":"Question","name":"What is per-resolution chatbot pricing?","acceptedAnswer":{"@type":"Answer","text":"You pay each time the bot closes a conversation without a human. Intercom Fin is the best known example at about 99 cents per resolution. The catch is that the bill rises as the bot gets better, because a higher resolution rate means more billable resolutions."}},
+{"@type":"Question","name":"Which chatbot pricing model is cheapest?","acceptedAnswer":{"@type":"Answer","text":"It depends entirely on volume. Per-resolution is often cheapest under about 500 conversations a month and among the most expensive at high volume. Flat-rate tiers are the most predictable for a growing business. An owned build has a large up-front cost and near-zero marginal cost, so it wins at high volume."}},
+{"@type":"Question","name":"What hidden costs come with a chatbot?","acceptedAnswer":{"@type":"Answer","text":"Common ones include a separate helpdesk subscription required to run the AI agent, per-agent copilot or QA add-ons, implementation and professional services fees, engineering time for setup and tuning, and messaging channel fees such as the per-conversation charge WhatsApp applies regardless of platform."}},
+{"@type":"Question","name":"How much does a custom chatbot cost to build?","acceptedAnswer":{"@type":"Answer","text":"Industry figures for a full enterprise custom build run roughly 15,000 to 40,000 dollars up front plus 200 to 800 dollars a month to operate. Smaller scoped custom bots for a single business cost far less. The defining feature is that there is no per-conversation charge once it is built."}},
+{"@type":"Question","name":"Can a chatbot be genuinely free?","acceptedAnswer":{"@type":"Answer","text":"Yes, if it is rule-based and hosted in your own page. The code runs in the visitor's browser with no server call, so there is nothing for anyone to meter. It cannot answer questions nobody scripted, which is the trade you are making."}}
+]}]}
+</script>
+
+<style>
+:root{
+  --void:#050A18;--deep:#0A1730;--panel:#0E1E3C;--line:#1E3157;
+  --signal:#0A84FF;--glow:#22D3FF;--warm:#FFB454;--hot:#FF7A59;
+  --paper:#FFFFFF;--ink:#0B1220;--slate:#44556F;--mute:#8FA3BF;
+  --wrap:1180px;--display:'Space Grotesk',system-ui,sans-serif;--body:'IBM Plex Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:#E8F0FB;font-family:var(--body);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--glow)}
+h1,h2,h3{font-family:var(--display);line-height:1.12;margin:0 0 .5em;letter-spacing:-.02em;font-weight:600}
+h1{font-size:clamp(2.2rem,4.6vw,3.5rem);font-weight:700;letter-spacing:-.035em}
+h2{font-size:clamp(1.75rem,3.2vw,2.5rem)}
+h3{font-size:1.14rem}
+p{margin:0 0 1em;max-width:70ch}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.narrow{max-width:800px;margin:0 auto}
+:focus-visible{outline:3px solid var(--glow);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;z-index:999;background:#fff;color:#000;padding:10px 16px;border-radius:8px}
+section{padding:72px 0}
+
+.masthead{background:var(--paper);border-bottom:1px solid #E4EBF4;position:sticky;top:0;z-index:60}
+.masthead .wrap{display:flex;align-items:center;gap:28px;min-height:86px;flex-wrap:wrap}
+.brand img{width:300px;max-width:62vw}
+.mnav{margin-left:auto;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.mnav a{color:var(--slate);text-decoration:none;font-size:.95rem;font-weight:500}
+.mnav a:hover{color:var(--signal)}
+.mnav .tel{font-family:var(--display);color:var(--ink);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:600;font-size:1rem;border:0;border-radius:999px;padding:14px 28px;cursor:pointer;text-decoration:none;transition:transform .18s}
+.btn-primary{background:linear-gradient(180deg,#3AA0FF,#0A6FE0);color:#fff;box-shadow:0 10px 26px rgba(10,132,255,.36)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:#CFE3FA;border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--glow);color:#fff}
+.btn-sm{padding:10px 20px;font-size:.92rem}
+
+.crumb{padding:18px 0 0;font-size:.85rem;color:#7F97B6}
+.crumb a{color:#8FA3BF;text-decoration:none}
+.crumb a:hover{color:var(--glow)}
+
+.top{position:relative;overflow:hidden;padding:44px 0 62px;isolation:isolate}
+#stars{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.top::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(55% 44% at 28% 18%,rgba(34,211,255,.13),transparent 70%),
+             radial-gradient(64% 46% at 84% 74%,rgba(255,122,89,.12),transparent 72%),
+             linear-gradient(180deg,transparent 58%,var(--void) 100%)}
+.top h1{max-width:18ch}
+.lede{font-size:clamp(1.04rem,1.7vw,1.22rem);color:#B9CEE8;max-width:64ch}
+
+/* quick answer box */
+.answer{margin-top:30px;border:1px solid rgba(34,211,255,.3);background:linear-gradient(180deg,rgba(34,211,255,.07),rgba(10,23,48,.6));border-radius:18px;padding:26px}
+.answer h2{font-size:1.1rem;color:#9FE9FF;margin-bottom:14px}
+.answer dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 20px;font-size:.96rem}
+@media(max-width:600px){.answer dl{grid-template-columns:1fr;gap:2px 0}.answer dd{margin-bottom:12px}}
+.answer dt{font-family:var(--display);font-weight:600;color:#fff;white-space:nowrap}
+.answer dd{margin:0;color:#AFC5E0}
+
+/* simulator */
+#sim{background:linear-gradient(180deg,var(--void),#071023 45%,var(--void));scroll-margin-top:96px}
+.simbox{background:linear-gradient(180deg,#0D1D3A,#0A1730);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 34px 80px rgba(0,0,0,.46)}
+.simgrid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr)}
+@media(max-width:940px){.simgrid{grid-template-columns:1fr}}
+.simin{padding:28px;border-right:1px solid var(--line)}
+@media(max-width:940px){.simin{border-right:0;border-bottom:1px solid var(--line)}}
+.simout{padding:28px;background:radial-gradient(120% 80% at 70% 0%,rgba(34,211,255,.06),transparent 60%)}
+.fgroup{margin-bottom:22px}
+label{display:block;font-family:var(--display);font-weight:600;font-size:.89rem;color:#BBD3EE;margin-bottom:9px}
+.hint{font-weight:400;color:#7F97B6;font-size:.82rem}
+input[type=range]{width:100%;accent-color:var(--signal);height:26px}
+.val{font-family:var(--display);font-size:1.75rem;font-weight:700;color:#fff;line-height:1;margin-bottom:4px}
+.val small{font-size:.82rem;color:#8FA3BF;font-weight:500;margin-left:6px}
+.rows{display:flex;flex-direction:column;gap:13px;margin-bottom:20px}
+.r b{font-family:var(--display);font-size:.88rem;color:#BBD3EE;display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;font-weight:600;gap:12px}
+.r b span.m{font-family:var(--body);font-weight:400;font-size:.78rem;color:#7F97B6}
+.r b em{font-style:normal;font-family:var(--display);font-size:1.1rem;color:#fff;white-space:nowrap}
+.track{height:22px;border-radius:7px;background:#071429;border:1px solid var(--line);overflow:hidden}
+.fill{height:100%;border-radius:6px;transition:width .5s cubic-bezier(.2,.8,.3,1);min-width:3px}
+.c1{background:linear-gradient(90deg,#E0632F,#FF9B5C)}
+.c2{background:linear-gradient(90deg,#D4842B,#FFC168)}
+.c3{background:linear-gradient(90deg,#B8562F,#FF8A6B)}
+.c4{background:linear-gradient(90deg,#6E7CCB,#A0ADF0)}
+.c5{background:linear-gradient(90deg,#7C5CFF,#A78BFA)}
+.c6{background:linear-gradient(90deg,#0A84FF,#22D3FF)}
+.winner{border:1px solid rgba(34,211,255,.28);background:rgba(34,211,255,.055);border-radius:14px;padding:17px;font-size:.95rem;color:#C5D8F0;line-height:1.55}
+.winner strong{color:#9FE9FF;font-family:var(--display)}
+.disclose{font-size:.8rem;color:#7F97B6;margin-top:14px;line-height:1.5}
+
+.sec-head{margin-bottom:34px}
+.sec-head p{color:#A8BFDC}
+.prose p{color:#C5D8F0}
+.prose h3{color:#9FE9FF;margin-top:32px}
+.pull{border-left:3px solid var(--warm);padding:6px 0 6px 22px;margin:28px 0;font-family:var(--display);font-size:1.2rem;color:#E8F0FB;line-height:1.45}
+.pull span{display:block;font-family:var(--body);font-size:.87rem;color:#8FA3BF;margin-top:10px}
+
+.models{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.model{background:rgba(255,255,255,.028);border:1px solid var(--line);border-radius:14px;padding:20px;position:relative}
+.model b{font-family:var(--display);color:#fff;display:block;margin-bottom:4px;font-size:1.04rem}
+.model .unit{font-size:.8rem;color:#9FE9FF;font-family:var(--display);margin-bottom:10px;display:block}
+.model p{margin:0 0 10px;font-size:.92rem;color:#AFC5E0}
+.model .turns{font-size:.86rem;color:var(--warm);border-top:1px solid var(--line);padding-top:10px;margin:0}
+.model .turns b{display:inline;color:var(--warm);font-size:.86rem}
+
+.trap{background:linear-gradient(180deg,#12091A,#0A1730);border:1px solid rgba(255,122,89,.28);border-radius:18px;padding:28px;margin-top:26px}
+.trap h3{color:var(--hot);margin-top:0}
+.trap p{color:#D6C6C0;margin-bottom:.8em}
+.trap table{width:100%;border-collapse:collapse;margin-top:16px;font-size:.92rem}
+.trap th,.trap td{padding:10px 12px;text-align:left;border-bottom:1px solid rgba(255,122,89,.16)}
+.trap th{font-family:var(--display);color:#FFB49B;font-weight:600;font-size:.86rem}
+.trap td{color:#E8D8D2}
+.trap tr:last-child td{border:0}
+
+.hidden-costs{list-style:none;padding:0;margin:0;max-width:78ch}
+.hidden-costs li{padding:15px 0 15px 34px;position:relative;color:#C5D8F0;border-bottom:1px solid var(--line);font-size:.96rem}
+.hidden-costs li:last-child{border:0}
+.hidden-costs li::before{content:"+";position:absolute;left:6px;top:14px;color:var(--warm);font-family:var(--display);font-size:1.2rem;font-weight:700}
+.hidden-costs strong{color:#E8F0FB}
+
+.faq{max-width:830px}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:21px 40px 21px 0;font-family:var(--display);font-weight:600;font-size:1.05rem;color:#E8F0FB;position:relative;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:29px;width:10px;height:10px;border-right:2px solid var(--glow);border-bottom:2px solid var(--glow);transform:rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:rotate(-135deg)}
+details p{color:#AFC5E0;font-size:.97rem;padding-bottom:20px;margin:0}
+
+.sourcenote{margin-top:30px;font-size:.86rem;color:#7F97B6;line-height:1.6;max-width:78ch}
+.endcta{text-align:center;background:linear-gradient(180deg,var(--void),#0A1730)}
+.endcta h2{max-width:22ch;margin-left:auto;margin-right:auto}
+.endcta p{margin-left:auto;margin-right:auto;color:#A8BFDC}
+.endcta .cta-row{display:flex;gap:13px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+
+footer{background:var(--paper);color:var(--ink);padding:56px 0 34px}
+footer a{color:var(--slate);text-decoration:none}
+footer a:hover{color:var(--signal);text-decoration:underline}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px}
+@media(max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+.fgrid h5{font-family:var(--display);font-size:.82rem;letter-spacing:.07em;color:#8A99AD;margin:0 0 13px;text-transform:uppercase;font-weight:600}
+.fgrid ul{list-style:none;padding:0;margin:0}
+.fgrid li{margin-bottom:9px;font-size:.92rem}
+footer .flogo{width:300px;max-width:70vw;margin-bottom:14px}
+footer .addr{color:var(--slate);font-size:.9rem;max-width:34ch}
+.fbase{margin-top:36px;padding-top:22px;border-top:1px solid #E4EBF4;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#8A99AD;font-size:.85rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#sim">Skip to the pricing simulator</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/images/conversational-ai-bot-logo.png" width="300" height="129" alt="conversationalaibot.com"></a>
+    <nav class="mnav">
+      <a href="/#builder">Build a chatbot</a>
+      <a href="/chatbot-for-small-business/">Small business</a>
+      <a href="/#custom">Custom bots</a>
+      <a class="tel" href="tel:18004818638">1-800-481-8638</a>
+      <a class="btn btn-primary btn-sm" href="/#builder">Start free</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="top">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; How much does a chatbot cost</nav>
+    <h1>How much does a chatbot cost?</h1>
+    <p class="lede">Anywhere from nothing to five figures a year, and the sticker price on the homepage will not tell you which. What decides your bill is the billable unit — what the vendor counts when they charge you.</p>
+
+    <div class="answer narrow" style="margin-left:0">
+      <h2>The short answer</h2>
+      <dl>
+        <dt>Entry flat-rate plans</dt><dd>Roughly $14–$16 a month when billed annually, with a conversation cap you will eventually hit.</dd>
+        <dt>Seat-based suites</dt><dd>About $55–$115 per agent per month. You pay for humans whether the bot does their work or not.</dd>
+        <dt>Usage-based</dt><dd>Roughly $0.40–$0.99 per conversation or per resolution, which is where bills get unpredictable.</dd>
+        <dt>Full custom build</dt><dd>Commonly cited at $15,000–$40,000 up front plus $200–$800 a month to run, with no per-conversation charge.</dd>
+        <dt>Rule-based, self-hosted</dt><dd>$0 per month. There is no server call, so there is nothing to meter.</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="sim">
+  <div class="wrap">
+    <div class="sec-head narrow" style="text-align:center">
+      <h2>Run your own numbers</h2>
+      <p>The same volume produces wildly different bills depending on the model. Move the sliders and watch which one wins — the answer changes as you grow, which is the entire point.</p>
+    </div>
+
+    <div class="simbox">
+      <div class="simgrid">
+        <div class="simin">
+          <div class="fgroup">
+            <label for="conv">Chat conversations per month</label>
+            <div class="val" id="convVal">1,000</div>
+            <input type="range" id="conv" min="50" max="50000" step="50" value="1000">
+          </div>
+          <div class="fgroup">
+            <label for="seats">Team members who need access <span class="hint">— seats</span></label>
+            <div class="val" id="seatsVal">2</div>
+            <input type="range" id="seats" min="0" max="15" step="1" value="2">
+          </div>
+          <div class="fgroup">
+            <label for="res">How many the bot resolves without a human</label>
+            <div class="val" id="resVal">65<small>percent</small></div>
+            <input type="range" id="res" min="0" max="95" step="5" value="65">
+          </div>
+          <p class="disclose">Rates used are the published market ranges cited below, not any single vendor's quote. Everything runs in your browser — nothing is sent anywhere.</p>
+        </div>
+
+        <div class="simout">
+          <div class="rows" id="rows"></div>
+          <div class="winner" id="winner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head narrow">
+      <h2>The five ways chatbots get priced</h2>
+      <p>Ask five vendors what they charge and you get five numbers that cannot be compared, because each one is counting something different.</p>
+    </div>
+    <div class="models">
+      <div class="model">
+        <b>Per seat</b><span class="unit">billed per human, per month</span>
+        <p>A fixed fee for every team member with access, typically $55–$115 each. Common in live-chat suites that bolted a bot on later.</p>
+        <p class="turns"><b>Turns expensive when:</b> your team grows, or automation rises and you keep paying for seats the bot made unnecessary.</p>
+      </div>
+      <div class="model">
+        <b>Per conversation</b><span class="unit">billed per chat opened</span>
+        <p>You pay whenever a visitor starts talking, resolved or not, commonly around $0.40–$1.00 each.</p>
+        <p class="turns"><b>Turns expensive when:</b> traffic spikes. A good month for marketing is a bad month for this invoice.</p>
+      </div>
+      <div class="model">
+        <b>Per resolution</b><span class="unit">billed per issue closed by the bot</span>
+        <p>You only pay when the bot actually finishes the job. Intercom's Fin popularized it at about $0.99 per resolution, usually on top of seat fees.</p>
+        <p class="turns"><b>Turns expensive when:</b> the bot gets good. See below — this one deserves its own section.</p>
+      </div>
+      <div class="model">
+        <b>Credits or messages</b><span class="unit">billed per unit consumed</span>
+        <p>You buy a bucket of message credits. The trap is that "message" means something different on every platform, so buckets are not comparable.</p>
+        <p class="turns"><b>Turns expensive when:</b> you run out mid-month and buy top-ups at retail.</p>
+      </div>
+      <div class="model">
+        <b>Flat tier</b><span class="unit">billed the same every month</span>
+        <p>One predictable price per tier. Widely considered the sanest option for a growing small business precisely because nothing surprises you.</p>
+        <p class="turns"><b>Turns expensive when:</b> you sit just under a ceiling and get pushed to the next tier, or you overpay for headroom you never use.</p>
+      </div>
+      <div class="model">
+        <b>Owned build</b><span class="unit">billed once, then hosting</span>
+        <p>You pay to have it built and then own it. No per-conversation tax, ever. Enterprise figures run $15k–$40k up front; a scoped small-business build is far less.</p>
+        <p class="turns"><b>Turns expensive when:</b> your volume is low. Below a few thousand chats a month, renting usually wins.</p>
+      </div>
+    </div>
+
+    <div class="trap narrow" style="margin-left:0;max-width:none">
+      <h3>The per-resolution growth trap</h3>
+      <p>This is the one nobody explains before you sign, and it is genuinely counterintuitive.</p>
+      <p>Per-resolution pricing sounds like the fairest model on the list. You only pay when the bot works. But your bill is volume multiplied by resolution rate — so every improvement to the bot raises what you owe. Tune it well and you are punished for it.</p>
+      <table>
+        <thead><tr><th scope="col">Bot resolves</th><th scope="col">At 2,000 chats/mo</th><th scope="col">Annual cost at $0.99</th></tr></thead>
+        <tbody>
+          <tr><td>40% (poor)</td><td>800 resolutions</td><td>$9,504</td></tr>
+          <tr><td>65% (typical)</td><td>1,300 resolutions</td><td>$15,444</td></tr>
+          <tr><td>85% (excellent)</td><td>1,700 resolutions</td><td>$20,196</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:16px">The better it gets, the more it costs. Industry resolution rates are climbing, which means this line item is climbing for everyone on that model — and seat fees usually sit on top of it.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head narrow">
+      <h2>What is not on the pricing page</h2>
+      <p>The sticker price is one layer. These are the ones that show up on the invoice.</p>
+    </div>
+    <div class="narrow" style="max-width:none">
+      <ul class="hidden-costs">
+        <li><strong>A helpdesk subscription you did not want.</strong> Several AI agents require the vendor's support platform to run at all. The bot is priced separately from the thing it needs to exist.</li>
+        <li><strong>Copilot and QA add-ons, per agent, per month.</strong> The features demoed to you are frequently a separate line item from the plan you were quoted.</li>
+        <li><strong>Implementation and professional services.</strong> Onboarding fees are standard above the self-serve tier and are often quoted only after you are committed.</li>
+        <li><strong>Your own engineering time.</strong> Setup, content ingestion, tuning, and ongoing configuration are real hours. They do not appear on anyone's pricing page but they come out of your budget.</li>
+        <li><strong>Messaging channel fees.</strong> WhatsApp charges per conversation regardless of which chatbot platform you use, so that cost rides along on top of whatever you are already paying.</li>
+        <li><strong>The next tier.</strong> Caps are set where growing businesses hit them. Budget for the tier above the one you are buying, because that is the one you will be on.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="narrow prose">
+      <h2>So what should you actually pay?</h2>
+      <p>Volume decides it, and the crossover points are reasonably consistent.</p>
+
+      <h3>Under a few hundred conversations a month</h3>
+      <p>Renting is fine and an owned build is hard to justify. But this is also exactly the range where a rule-based bot handles nearly everything, because at that volume your questions are repetitive and your answers are fixed. If hours, service area, pricing ranges and booking cover 90% of what people ask, you are about to pay a subscription for a FAQ.</p>
+
+      <h3>A few thousand a month</h3>
+      <p>Flat-tier pricing usually wins on predictability. Per-resolution starts getting uncomfortable here, and seat-based stops making sense if the bot is handling most of the load.</p>
+
+      <h3>Tens of thousands a month</h3>
+      <p>The math flips toward owning it. A fixed build cost with near-zero marginal cost beats any rented model once volume is high enough, which is the whole reason large companies build instead of rent.</p>
+
+      <div class="pull">The cheapest model at 500 conversations a month is frequently the most expensive one at 50,000.
+        <span>Which is why "what does it cost" has no answer until you say how much you use it.</span></div>
+
+      <h3>One thing worth knowing before you compare</h3>
+      <p>Drift, for years the default reference point in any chatbot pricing comparison, was sunset by Salesloft in March 2026. A lot of the comparison articles still ranking on this topic were written before that. If a roundup is recommending it, the roundup is stale — check the date on anything you read about this, including this page.</p>
+
+      <p class="sourcenote">Figures here are drawn from published 2026 pricing research across multiple independent comparisons, including per-resolution rates around $0.99, seat pricing in the $55–$115 range, usage pricing around $0.40–$1.00, and custom build figures of $15k–$40k plus $200–$800 monthly. Vendor pricing changes often and we do not restate any single company's current plan as fact — verify on the vendor's own pricing page before you buy. Last reviewed September 2026.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head narrow"><h2>Chatbot cost questions</h2></div>
+    <div class="faq">
+      <details open><summary>How much does a chatbot cost per month?</summary><p>Entry flat-rate plans start around $14–$16 a month billed annually. Seat suites run roughly $55–$115 per agent. Usage models charge about $0.40–$0.99 per conversation or resolution. A rule-based bot you host in your own page costs nothing monthly, because there is no server call to meter.</p></details>
+      <details><summary>What is per-resolution pricing?</summary><p>You pay each time the bot closes a conversation without a human, commonly around $0.99. The catch is that your bill rises as the bot improves, since a higher resolution rate means more billable resolutions.</p></details>
+      <details><summary>Which pricing model is cheapest?</summary><p>It depends entirely on volume. Per-resolution is often cheapest below about 500 conversations a month and among the priciest at high volume. Flat tiers are the most predictable while you grow. An owned build wins once volume is high because marginal cost is near zero.</p></details>
+      <details><summary>What hidden costs should I expect?</summary><p>A required helpdesk subscription, per-agent copilot or QA add-ons, implementation fees, your own engineering hours, messaging channel fees like WhatsApp's per-conversation charge, and the next pricing tier you will get pushed into.</p></details>
+      <details><summary>How much does a custom chatbot cost?</summary><p>Enterprise builds are commonly cited at $15,000–$40,000 up front plus $200–$800 a month. A scoped build for a single small business costs far less. What defines the category is that there is no per-conversation charge once it exists.</p></details>
+      <details><summary>Can a chatbot actually be free?</summary><p>Yes, if it is rule-based and lives in your own page. The code runs in the visitor's browser with no server call, so there is nothing for anyone to meter. The trade is that it cannot answer what nobody scripted.</p></details>
+      <details><summary>What about the $199 install you offer?</summary><p>That is a one-time fee to put the free bot on your site and host the file, including the first 12 months of hosting, then $49 a year. It is not a subscription to the chatbot — the chatbot is free either way. You are paying for the hour of work.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="endcta">
+  <div class="wrap">
+    <h2>Or find out what $0 gets you</h2>
+    <p>Before you price anything, spend two minutes building the free version and see whether it already answers the questions you actually get asked. If it does, you are done. If it does not, now you know exactly what you are shopping for.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/#builder">Build one free</a>
+      <a class="btn btn-ghost" href="/chatbot-for-small-business/">Small business guide</a>
+      <a class="btn btn-ghost" href="#" data-cora="how much does it cost">Ask Cora</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img class="flogo" src="/images/conversational-ai-bot-logo.png" width="300" height="129" alt="conversationalaibot.com">
+        <p class="addr">1001 Bannock St #660<br>Denver, CO 80204<br><a href="tel:18004818638">1-800-481-8638</a></p>
+      </div>
+      <div>
+        <h5>Chatbots</h5>
+        <ul>
+          <li><a href="/#builder">Free chatbot generator</a></li>
+          <li><a href="/chatbot-for-small-business/">Chatbot for small business</a></li>
+          <li><a href="/how-much-does-a-chatbot-cost/">How much does a chatbot cost</a></li>
+          <li><a href="/#custom">Custom chatbot builds</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Marketing</h5>
+        <ul>
+          <li><a href="https://eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a></li>
+          <li><a href="https://searchconverts.com" target="_blank" rel="noopener">Search Converts</a></li>
+          <li><a href="https://advertisingforcontractors.com" target="_blank" rel="noopener">Advertising for Contractors</a></li>
+          <li><a href="https://mysaleshelp.com" target="_blank" rel="noopener">My Sales Help</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Also ours</h5>
+        <ul>
+          <li><a href="https://www.agingsafelybaths.com" target="_blank" rel="noopener">Aging Safely Baths</a></li>
+          <li><a href="https://showers4less.com" target="_blank" rel="noopener">Showers4Less</a></li>
+          <li><a href="https://denverseo.io" target="_blank" rel="noopener">Denver SEO</a></li>
+          <li><a href="https://buyweburl.com" target="_blank" rel="noopener">Domains &amp; hosting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbase">
+      <span>&copy; <span id="yr">2026</span> conversationalaibot.com</span>
+      <span>Built in Denver, Colorado</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* ---------------- pricing model simulator ---------------- */
+(function(){
+  var conv=document.getElementById('conv'), seats=document.getElementById('seats'),
+      res=document.getElementById('res'), rows=document.getElementById('rows'),
+      winner=document.getElementById('winner');
+
+  /* published market mid-points, not any one vendor's quote */
+  var SEAT=85, PERCONV=0.80, PERRES=0.99, RESSEAT=29, CREDIT=0.45;
+  var BUILD=15000, BUILDRUN=300;
+
+  function money(n){ return '$'+Math.round(n).toLocaleString('en-US'); }
+  function flatTier(c){
+    if(c<=1000) return 39;
+    if(c<=5000) return 115;
+    if(c<=20000) return 399;
+    /* above the top published tier you are into overage or an enterprise quote */
+    return 999 + (c-20000)*0.02;
+  }
+
+  function run(){
+    var c=+conv.value, s=+seats.value, r=+res.value/100;
+
+    var models=[
+      {n:'Per seat',        m:'$'+SEAT+'/agent — plus a usage cap you will outgrow', y:s*SEAT*12,                        cls:'c1'},
+      {n:'Per conversation',m:'at $'+PERCONV.toFixed(2)+' per chat opened',      y:c*PERCONV*12,                     cls:'c2'},
+      {n:'Per resolution',  m:'at $'+PERRES.toFixed(2)+' each, plus $'+RESSEAT+' seats', y:(c*r*PERRES*12)+(s*RESSEAT*12), cls:'c3'},
+      {n:'Message credits', m:'at $'+CREDIT.toFixed(2)+' per unit consumed',     y:c*CREDIT*12,                      cls:'c4'},
+      {n:'Flat tier',       m:'$'+Math.round(flatTier(c)).toLocaleString('en-US')+' a month at this volume',         y:flatTier(c)*12,                   cls:'c5'},
+      {n:'Owned build',     m:'first year: build plus hosting',                  y:BUILD+BUILDRUN*12,                cls:'c5'},
+      {n:'Rule-based, free',m:'no server, nothing to meter',                     y:0,                                cls:'c6'}
+    ];
+
+    var max=Math.max.apply(null, models.map(function(m){return m.y;})) || 1;
+    rows.innerHTML = models.map(function(m){
+      return '<div class="r"><b><span>'+m.n+' <span class="m">'+m.m+'</span></span><em>'+money(m.y)+'</em></b>'+
+             '<div class="track"><div class="fill '+m.cls+'" style="width:'+Math.max(1.5,(m.y/max)*100)+'%"></div></div></div>';
+    }).join('');
+
+    /* cheapest paid option */
+    var paid=models.filter(function(m){ return m.y>0; }).sort(function(a,b){ return a.y-b.y; });
+    var best=paid[0], worst=paid[paid.length-1];
+    var perRes=models[2].y, flat=models[4].y, owned=models[5].y;
+
+    var note;
+    if(c<500){
+      note='At '+c.toLocaleString()+' conversations a month you are in the range where <strong>renting beats owning</strong> — and also the range where a rule-based bot usually covers the questions you actually get. '
+         + 'Cheapest paid option here: <strong>'+best.n.toLowerCase()+'</strong> at '+money(best.y)+' a year.';
+    } else if(owned<flat && owned<perRes){
+      note='At this volume the math has flipped: <strong>owning it outright</strong> ('+money(owned)+' first year) now beats flat-tier ('+money(flat)+') and per-resolution ('+money(perRes)+'). '
+         + 'From year two the owned option drops to about '+money(BUILDRUN*12)+' a year.';
+    } else {
+      note='Cheapest paid model at this volume is <strong>'+best.n.toLowerCase()+'</strong> at '+money(best.y)+' a year. '
+         + 'The most expensive is '+worst.n.toLowerCase()+' at '+money(worst.y)+' — a '+Math.round(worst.y/Math.max(best.y,1))+'x spread for the same traffic.';
+    }
+    if(r>=0.8 && c>=500){
+      note+=' Notice that raising the resolution rate <em>increased</em> the per-resolution bill. That is the growth trap, working as designed.';
+    }
+    winner.innerHTML=note;
+
+    document.getElementById('convVal').textContent=c.toLocaleString();
+    document.getElementById('seatsVal').textContent=s;
+    document.getElementById('resVal').innerHTML=(r*100).toFixed(0)+'<small>percent</small>';
+  }
+
+  conv.addEventListener('input',run);
+  seats.addEventListener('input',run);
+  res.addEventListener('input',run);
+  run();
+})();
+
+/* ---------------- starfield ---------------- */
+(function(){
+  var cv=document.getElementById('stars'); if(!cv) return;
+  var ctx=cv.getContext('2d'), st=[], w=0,h=0,raf=null;
+  var still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){
+    var r=cv.getBoundingClientRect(), d=Math.min(window.devicePixelRatio||1,2);
+    w=r.width; h=r.height; cv.width=w*d; cv.height=h*d; ctx.setTransform(d,0,0,d,0,0);
+    st=[]; var n=Math.round(Math.min(260,(w*h)/3800));
+    for(var i=0;i<n;i++) st.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.25+.25,
+      a:Math.random()*.6+.2,s:Math.random()*.016+.004,d:Math.random()*6.28,v:Math.random()*.05+.012});
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    var g=ctx.createRadialGradient(w*.3,h*.25,0,w*.3,h*.25,Math.max(w,h)*.6);
+    g.addColorStop(0,'rgba(44,120,255,.1)'); g.addColorStop(1,'rgba(44,120,255,0)');
+    ctx.fillStyle=g; ctx.fillRect(0,0,w,h);
+    for(var i=0;i<st.length;i++){ var s=st[i];
+      if(!still){ s.d+=s.s; s.y-=s.v; if(s.y<-2) s.y=h+2; }
+      var a=still?s.a:s.a*(.62+.38*Math.sin(s.d));
+      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,6.2832);
+      ctx.fillStyle='rgba(203,232,255,'+a.toFixed(3)+')'; ctx.fill();
+    }
+    if(!still) raf=requestAnimationFrame(draw);
+  }
+  function start(){ if(raf) cancelAnimationFrame(raf); size(); draw(); }
+  window.addEventListener('resize',function(){ clearTimeout(cv._t); cv._t=setTimeout(start,180); });
+  start();
+})();
+</script>
+<script src="/cora.js" defer></script>
+</body>
+</html>
