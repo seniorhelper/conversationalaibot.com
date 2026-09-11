@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Chatbot for Business — Free Chatbot Generator, No Signup | conversationalaibot.com</title>
+<meta name="description" content="Build an AI chatbot for your business in about two minutes. Free chatbot generator with industry presets, live preview, and one line of code to paste on any website. No signup, no account, no monthly fee.">
+<link rel="canonical" href="https://conversationalaibot.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#050A18">
+
+<link rel="icon" href="/images/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="conversationalaibot.com">
+<meta property="og:url" content="https://conversationalaibot.com/">
+<meta property="og:title" content="AI Chatbot for Business — Free Chatbot Generator, No Signup">
+<meta property="og:description" content="Build a chatbot for your business in about two minutes. Pick your industry, customize it, copy one line of code. Free, no signup, no monthly fee.">
+<meta property="og:image" content="https://conversationalaibot.com/images/chatbot-ad-banner-social.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Chatbot for Business — Free Chatbot Generator, No Signup">
+<meta name="twitter:description" content="Build a chatbot for your business in about two minutes. Copy one line of code. Free, no signup.">
+<meta name="twitter:image" content="https://conversationalaibot.com/images/chatbot-ad-banner-social.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://conversationalaibot.com/#website","url":"https://conversationalaibot.com/","name":"conversationalaibot.com","publisher":{"@id":"https://conversationalaibot.com/#org"}},
+{"@type":"Organization","@id":"https://conversationalaibot.com/#org","name":"conversationalaibot.com","url":"https://conversationalaibot.com/","logo":"https://conversationalaibot.com/images/conversational-ai-bot-logo.png","telephone":"+1-800-481-8638","address":{"@type":"PostalAddress","streetAddress":"1001 Bannock St #660","addressLocality":"Denver","addressRegion":"CO","postalCode":"80204","addressCountry":"US"}},
+{"@type":"WebApplication","@id":"https://conversationalaibot.com/#app","name":"Free Chatbot Generator","url":"https://conversationalaibot.com/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Build a chatbot for your business website. Pick an industry preset, customize the questions and answers, and copy one line of code. No signup or account required."},
+{"@type":"Service","name":"Chatbot installation and hosting","provider":{"@id":"https://conversationalaibot.com/#org"},"areaServed":"US","offers":{"@type":"Offer","price":"199","priceCurrency":"USD","description":"One-time setup: we install your chatbot on your site and host it for the first 12 months."}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is the chatbot generator really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no account, no email, and no card. The tool runs in your browser and gives you a code snippet you own outright. Nothing is metered because nothing phones home to us."}},
+{"@type":"Question","name":"Do I need to know how to code?","acceptedAnswer":{"@type":"Answer","text":"No. You fill in a short form, watch the preview update, then copy one block of code and paste it before the closing body tag of your site. If you can edit your site's footer, you can install it."}},
+{"@type":"Question","name":"Will this work on WordPress, Wix, Shopify or Squarespace?","acceptedAnswer":{"@type":"Answer","text":"Yes. Anywhere you can paste HTML works: a WordPress footer or custom HTML block, Shopify theme.liquid, Wix custom code, Squarespace code injection, Webflow custom code, or a plain HTML file."}},
+{"@type":"Question","name":"Is this an AI chatbot or a rule-based chatbot?","acceptedAnswer":{"@type":"Answer","text":"The generated chatbot is rule-based. It answers the questions you write answers for, and it never makes anything up. That is the right choice for most small businesses, because a rule-based bot cannot invent a price, a policy, or a promise you did not approve. If you need a bot trained on your documents, that is our custom build."}},
+{"@type":"Question","name":"How much does the chatbot cost to run each month?","acceptedAnswer":{"@type":"Answer","text":"Nothing. The code sits in your own page and runs in the visitor's browser. There is no server, no API call, and no per-conversation charge, so traffic spikes cost you nothing."}},
+{"@type":"Question","name":"What if I want you to install it for me?","acceptedAnswer":{"@type":"Answer","text":"We install it on your site and host the assets for a one-time fee of 199 dollars, which covers the first 12 months of hosting. After that, hosting renews at 49 dollars a year, or you can move the file to your own server for free."}},
+{"@type":"Question","name":"Does the chatbot collect leads?","acceptedAnswer":{"@type":"Answer","text":"Yes. Turn on the message form and visitors can leave a name, phone number and message. It opens their email app addressed to you, so the lead lands in your inbox with no database and no privacy paperwork."}}
+]}]}
+</script>
+
+<style>
+:root{
+  --void:#050A18; --deep:#0A1730; --panel:#0E1E3C; --line:#1E3157;
+  --signal:#0A84FF; --glow:#22D3FF; --warm:#FFB454;
+  --paper:#FFFFFF; --ink:#0B1220; --slate:#44556F; --mute:#8FA3BF;
+  --r:14px; --wrap:1180px;
+  --display:'Space Grotesk',system-ui,sans-serif;
+  --body:'IBM Plex Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:#E8F0FB;font-family:var(--body);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--glow)}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.1;margin:0 0 .5em;letter-spacing:-.02em;font-weight:600}
+h1{font-size:clamp(2.6rem,6.4vw,5rem);font-weight:700;letter-spacing:-.035em}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
+h3{font-size:1.22rem}
+p{margin:0 0 1em;max-width:68ch}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--glow);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:12px;top:12px;z-index:999;background:#fff;color:#000;padding:10px 16px;border-radius:8px}
+
+/* ---------- header (white — logo has a white background) ---------- */
+.masthead{background:var(--paper);border-bottom:1px solid #E4EBF4;position:sticky;top:0;z-index:60}
+.masthead .wrap{display:flex;align-items:center;gap:28px;min-height:86px;flex-wrap:wrap}
+.brand img{width:300px;max-width:62vw;height:auto}
+.mnav{margin-left:auto;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.mnav a{color:var(--slate);text-decoration:none;font-size:.95rem;font-weight:500}
+.mnav a:hover{color:var(--signal)}
+.mnav .tel{font-family:var(--display);color:var(--ink);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:600;font-size:1rem;border:0;border-radius:999px;padding:14px 28px;cursor:pointer;text-decoration:none;transition:transform .18s,box-shadow .18s,background .18s}
+.btn-primary{background:linear-gradient(180deg,#3AA0FF,#0A6FE0);color:#fff;box-shadow:0 10px 26px rgba(10,132,255,.36)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(10,132,255,.46)}
+.btn-ghost{background:transparent;color:#CFE3FA;border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--glow);color:#fff}
+.btn-sm{padding:10px 20px;font-size:.92rem}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;text-align:center;padding:104px 0 92px;isolation:isolate}
+#stars{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(58% 46% at 50% 22%,rgba(34,211,255,.16),transparent 70%),
+             radial-gradient(70% 50% at 78% 78%,rgba(112,60,255,.16),transparent 72%),
+             linear-gradient(180deg,transparent 55%,var(--void) 100%)}
+.hero p.lede{font-size:clamp(1.06rem,1.9vw,1.3rem);color:#B9CEE8;margin:0 auto 34px;max-width:60ch}
+.mascot{width:min(208px,40vw);margin:0 auto 26px;filter:drop-shadow(0 0 42px rgba(34,211,255,.55))}
+@media(prefers-reduced-motion:no-preference){.mascot{animation:hover 6.5s ease-in-out infinite}}
+@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
+.hero h1{margin-bottom:.34em}
+.hero h1 .l2{display:block;background:linear-gradient(92deg,#6FD9FF,#2E9BFF 55%,#9E7BFF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.trust{margin:30px auto 0;display:flex;gap:10px 30px;justify-content:center;flex-wrap:wrap;color:#8FA9C9;font-size:.9rem;max-width:none}
+.trust span{display:inline-flex;align-items:center;gap:8px}
+.tick{width:17px;height:17px;flex:0 0 17px;border-radius:50%;background:rgba(34,211,255,.16);display:grid;place-items:center}
+.tick svg{width:10px;height:10px;stroke:var(--glow);stroke-width:3;fill:none}
+
+/* ---------- section frame ---------- */
+section{padding:84px 0}
+.sec-head{text-align:center;margin-bottom:44px}
+.sec-head p{margin:0 auto;color:#A8BFDC}
+
+/* ---------- the builder ---------- */
+#builder{background:linear-gradient(180deg,var(--void),#071023 40%,var(--void));scroll-margin-top:96px}
+.console{background:linear-gradient(180deg,#0D1D3A,#0A1730);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.5)}
+.tabs{display:flex;gap:6px;padding:14px 16px;overflow-x:auto;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+.tab{flex:0 0 auto;font-family:var(--display);font-weight:600;font-size:.92rem;color:#9FB6D4;background:transparent;border:1px solid transparent;border-radius:999px;padding:9px 18px;cursor:pointer;transition:.16s;white-space:nowrap}
+.tab:hover{color:#fff;background:rgba(255,255,255,.05)}
+.tab[aria-selected="true"]{background:rgba(34,211,255,.13);border-color:rgba(34,211,255,.4);color:#9FE9FF}
+.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
+@media(max-width:940px){.split{grid-template-columns:1fr}}
+.form-pane{padding:30px;border-right:1px solid var(--line)}
+@media(max-width:940px){.form-pane{border-right:0;border-bottom:1px solid var(--line)}}
+.fgroup{margin-bottom:20px}
+label{display:block;font-family:var(--display);font-weight:600;font-size:.87rem;color:#BBD3EE;margin-bottom:7px}
+.hint{font-weight:400;color:#7F97B6;font-size:.82rem}
+input[type=text],input[type=tel],input[type=email],input[type=url],textarea,select{
+  width:100%;background:#071429;border:1px solid var(--line);border-radius:10px;color:#EAF2FC;
+  font-family:var(--body);font-size:.97rem;padding:12px 14px;transition:border-color .15s}
+textarea{resize:vertical;min-height:74px;line-height:1.5}
+input:focus,textarea:focus,select:focus{border-color:var(--glow);outline:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.two{grid-template-columns:1fr}}
+.qa{border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px;background:rgba(255,255,255,.017)}
+.qa-top{display:flex;gap:10px;align-items:center;margin-bottom:9px}
+.qa-top input{flex:1}
+.del{background:rgba(255,90,90,.1);border:1px solid rgba(255,90,90,.3);color:#FF9C9C;border-radius:8px;width:36px;height:40px;flex:0 0 36px;cursor:pointer;font-size:1.1rem;line-height:1}
+.del:hover{background:rgba(255,90,90,.2)}
+.addq{background:rgba(34,211,255,.08);border:1px dashed rgba(34,211,255,.4);color:#9FE9FF;border-radius:10px;padding:11px;width:100%;cursor:pointer;font-family:var(--display);font-weight:600;font-size:.92rem}
+.addq:hover{background:rgba(34,211,255,.16)}
+.addq[disabled]{opacity:.4;cursor:not-allowed}
+.swatches{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+.sw{width:32px;height:32px;border-radius:9px;border:2px solid transparent;cursor:pointer;padding:0}
+.sw[aria-pressed="true"]{border-color:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.18)}
+.seg{display:flex;gap:6px;background:#071429;border:1px solid var(--line);border-radius:10px;padding:4px}
+.seg button{flex:1;background:transparent;border:0;color:#9FB6D4;font-family:var(--display);font-weight:600;font-size:.88rem;padding:9px;border-radius:7px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:rgba(34,211,255,.15);color:#9FE9FF}
+.check{display:flex;gap:11px;align-items:flex-start;cursor:pointer;font-size:.93rem;color:#C5D8F0}
+.check input{margin-top:4px;width:17px;height:17px;accent-color:var(--signal);flex:0 0 17px}
+
+/* preview pane */
+.prev-pane{padding:30px;display:flex;flex-direction:column;gap:16px;background:
+  radial-gradient(120% 80% at 70% 0%,rgba(34,211,255,.07),transparent 60%)}
+.prev-label{display:flex;align-items:center;gap:9px;font-family:var(--display);font-weight:600;font-size:.85rem;color:#9FE9FF}
+.dot{width:8px;height:8px;border-radius:50%;background:#22D3FF;box-shadow:0 0 0 0 rgba(34,211,255,.6)}
+@media(prefers-reduced-motion:no-preference){.dot{animation:pulse 2.4s infinite}}
+@keyframes pulse{70%{box-shadow:0 0 0 11px rgba(34,211,255,0)}100%{box-shadow:0 0 0 0 rgba(34,211,255,0)}}
+.browser{background:#F2F5FA;border-radius:14px;border:1px solid #22365C;overflow:hidden;min-height:470px;position:relative;flex:1}
+.chrome{background:#E2E8F1;padding:9px 13px;display:flex;gap:6px;align-items:center;border-bottom:1px solid #CFD8E5}
+.chrome i{width:10px;height:10px;border-radius:50%;background:#C3CCDA;display:block}
+.chrome .bar{flex:1;margin-left:8px;background:#fff;border-radius:6px;height:19px;font-size:.68rem;color:#8794A8;padding:0 9px;line-height:19px;font-family:var(--body);overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+#stage{position:relative;height:430px;background:#fff;overflow:hidden}
+.fakepage{padding:24px;color:#C6CFDC;user-select:none}
+.fakepage .fl{height:11px;border-radius:5px;background:#EDF1F6;margin-bottom:11px}
+.fakepage .fl.t{height:21px;width:58%;background:#E4EAF2}
+.fakepage .fl.s{width:82%} .fakepage .fl.x{width:67%}
+
+/* code out */
+.codewrap{margin-top:26px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#060F20}
+.codebar{display:flex;align-items:center;gap:12px;padding:13px 18px;background:rgba(255,255,255,.03);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.codebar strong{font-family:var(--display);font-size:.95rem;color:#CFE3FA;font-weight:600}
+.codebar .sz{font-size:.8rem;color:#7F97B6}
+.codebar .acts{margin-left:auto;display:flex;gap:9px}
+pre{margin:0;padding:18px;overflow:auto;max-height:250px;font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:.78rem;line-height:1.6;color:#8FE3B0;white-space:pre-wrap;word-break:break-all}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+@media(max-width:780px){.steps3{grid-template-columns:1fr}}
+.step{background:rgba(255,255,255,.028);border:1px solid var(--line);border-radius:14px;padding:20px}
+.step b{font-family:var(--display);color:var(--glow);font-size:.82rem;display:block;margin-bottom:6px}
+.step p{margin:0;font-size:.93rem;color:#AFC5E0}
+
+/* sponsor rotation */
+.sponsor{margin-top:24px;border:1px solid var(--line);border-radius:16px;padding:20px 24px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;background:linear-gradient(100deg,rgba(34,211,255,.06),rgba(112,60,255,.06))}
+.sponsor .tag{font-family:var(--display);font-size:.7rem;letter-spacing:.09em;color:#7F97B6;text-transform:uppercase}
+.sponsor h4{margin:2px 0 3px;font-family:var(--display);font-size:1.06rem;color:#fff}
+.sponsor p{margin:0;font-size:.92rem;color:#AFC5E0;max-width:60ch}
+.sponsor .go{margin-left:auto}
+@media(max-width:680px){.sponsor .go{margin-left:0;width:100%}.sponsor .go .btn{width:100%}}
+
+/* upsell */
+#custom{background:linear-gradient(180deg,#071023,#0A1730)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+@media(max-width:880px){.duo{grid-template-columns:1fr;gap:30px}}
+.pricecard{background:linear-gradient(180deg,#0E1E3C,#0A1730);border:1px solid var(--line);border-radius:20px;padding:30px}
+.pricecard .amt{font-family:var(--display);font-size:3.3rem;font-weight:700;color:#fff;line-height:1}
+.pricecard .amt small{font-size:1rem;color:#8FA3BF;font-weight:500}
+.pricecard ul{list-style:none;padding:0;margin:20px 0 24px}
+.pricecard li{padding:9px 0 9px 30px;position:relative;color:#C5D8F0;font-size:.96rem;border-bottom:1px solid rgba(255,255,255,.05)}
+.pricecard li:last-child{border:0}
+.pricecard li::before{content:"";position:absolute;left:0;top:16px;width:16px;height:8px;border-left:2.5px solid var(--glow);border-bottom:2.5px solid var(--glow);transform:rotate(-45deg)}
+
+.meetcora{display:flex;gap:18px;align-items:flex-start;background:rgba(34,211,255,.055);border:1px solid rgba(34,211,255,.22);border-radius:14px;padding:18px;max-width:none}
+.meetcora img{width:76px;height:76px;flex:0 0 76px;filter:drop-shadow(0 0 20px rgba(34,211,255,.5))}
+.meetcora span{font-size:.96rem;color:#C5D8F0;line-height:1.55}
+.meetcora b{color:#9FE9FF;font-family:var(--display)}
+
+/* faq */
+.faq{max-width:830px;margin:0 auto}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:21px 40px 21px 0;font-family:var(--display);font-weight:600;font-size:1.06rem;color:#E8F0FB;position:relative;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:29px;width:10px;height:10px;border-right:2px solid var(--glow);border-bottom:2px solid var(--glow);transform:rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:rotate(-135deg)}
+details p{color:#AFC5E0;font-size:.97rem;padding-bottom:20px;margin:0}
+
+/* resources */
+.reslist{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.reslist a{display:block;padding:17px;border:1px solid var(--line);border-radius:12px;text-decoration:none;background:rgba(255,255,255,.02)}
+.reslist a:hover{border-color:var(--glow)}
+.reslist b{display:block;color:#E8F0FB;font-family:var(--display);font-size:.98rem;margin-bottom:3px}
+.reslist span{color:#8FA3BF;font-size:.86rem}
+
+/* footer */
+footer{background:var(--paper);color:var(--ink);padding:56px 0 34px}
+footer a{color:var(--slate);text-decoration:none}
+footer a:hover{color:var(--signal);text-decoration:underline}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px}
+@media(max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+.fgrid h5{font-family:var(--display);font-size:.82rem;letter-spacing:.07em;color:#8A99AD;margin:0 0 13px;text-transform:uppercase;font-weight:600}
+.fgrid ul{list-style:none;padding:0;margin:0}
+.fgrid li{margin-bottom:9px;font-size:.92rem}
+footer .flogo{width:300px;max-width:70vw;margin-bottom:14px}
+footer .addr{color:var(--slate);font-size:.9rem;max-width:34ch}
+.fbase{margin-top:36px;padding-top:22px;border-top:1px solid #E4EBF4;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#8A99AD;font-size:.85rem}
+
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(140%);background:#0E1E3C;border:1px solid var(--glow);color:#CFF6FF;padding:13px 24px;border-radius:999px;z-index:400;font-family:var(--display);font-weight:600;font-size:.94rem;transition:transform .3s;box-shadow:0 14px 40px rgba(0,0,0,.5)}
+.toast.on{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<a class="skip" href="#builder">Skip to the chatbot generator</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/images/conversational-ai-bot-logo.png" width="300" height="129" alt="conversationalaibot.com"></a>
+    <nav class="mnav">
+      <a href="#builder">Build a chatbot</a>
+      <a href="#custom">Custom bots</a>
+      <a href="#faq">FAQ</a>
+      <a class="tel" href="tel:18004818638">1-800-481-8638</a>
+      <a class="btn btn-primary btn-sm" href="#builder">Start free</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <img class="mascot" src="/images/conversational-ai-chatbot.avif" width="600" height="585" alt="" fetchpriority="high">
+    <h1>An AI chatbot for your business.<span class="l2">Built in two minutes, free.</span></h1>
+    <p class="lede">Answer the same questions over and over, or let a chatbot do it. Pick your industry, write your answers, copy one block of code. It works on any website, and it never charges you per conversation.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#builder">Build my chatbot</a>
+      <a class="btn btn-ghost" href="#custom">See a custom bot</a>
+    </div>
+    <div class="trust">
+      <span><i class="tick"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.7 9 10 3"/></svg></i>No signup or account</span>
+      <span><i class="tick"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.7 9 10 3"/></svg></i>No monthly fee, ever</span>
+      <span><i class="tick"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.7 9 10 3"/></svg></i>Unlimited conversations</span>
+      <span><i class="tick"><svg viewBox="0 0 12 12"><path d="M2 6.5 4.7 9 10 3"/></svg></i>You own the code</span>
+    </div>
+  </div>
+</section>
+
+<section id="builder">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Build your chatbot</h2>
+      <p>Start with your industry, edit anything you want, and watch the preview on the right change as you type.</p>
+    </div>
+
+    <div class="console">
+      <div class="tabs" role="tablist" aria-label="Industry presets" id="tabs"></div>
+      <div class="split">
+        <div class="form-pane">
+          <div class="fgroup">
+            <label for="bizName">Business name</label>
+            <input type="text" id="bizName" maxlength="40" autocomplete="organization">
+          </div>
+          <div class="fgroup">
+            <label for="greeting">First thing the chatbot says</label>
+            <textarea id="greeting" maxlength="180"></textarea>
+          </div>
+
+          <div class="fgroup">
+            <label>Questions and answers <span class="hint">— what visitors can tap, and what the bot replies</span></label>
+            <div id="qaList"></div>
+            <button class="addq" id="addQ" type="button">+ Add another question</button>
+          </div>
+
+          <div class="fgroup two">
+            <div>
+              <label for="phone">Phone <span class="hint">(optional)</span></label>
+              <input type="tel" id="phone" placeholder="303-555-0100" autocomplete="tel">
+            </div>
+            <div>
+              <label for="email">Email <span class="hint">(optional)</span></label>
+              <input type="email" id="email" placeholder="you@yourbusiness.com" autocomplete="email">
+            </div>
+          </div>
+
+          <div class="fgroup">
+            <label>Accent color</label>
+            <div class="swatches" id="swatches"></div>
+          </div>
+
+          <div class="fgroup">
+            <label>Bubble position</label>
+            <div class="seg" id="posSeg">
+              <button type="button" data-pos="right" aria-pressed="true">Bottom right</button>
+              <button type="button" data-pos="left" aria-pressed="false">Bottom left</button>
+            </div>
+          </div>
+
+          <div class="fgroup">
+            <label class="check"><input type="checkbox" id="optLead" checked>
+              <span>Let visitors leave their name, phone and message. It opens their email app addressed to you, so leads land in your inbox with no database to manage.</span></label>
+          </div>
+          <div class="fgroup">
+            <label class="check"><input type="checkbox" id="optNudge" checked>
+              <span>Pop the greeting open by itself after 6 seconds so people notice it.</span></label>
+          </div>
+        </div>
+
+        <div class="prev-pane">
+          <div class="prev-label"><span class="dot"></span> Live preview — click the bubble, it actually works</div>
+          <div class="browser">
+            <div class="chrome"><i></i><i></i><i></i><div class="bar" id="fakeUrl">yourbusiness.com</div></div>
+            <div id="stage">
+              <div class="fakepage" aria-hidden="true">
+                <div class="fl t"></div><div class="fl s"></div><div class="fl"></div><div class="fl x"></div>
+                <div class="fl s"></div><div class="fl"></div><div class="fl x"></div><div class="fl s"></div>
+                <div class="fl"></div><div class="fl x"></div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="getCode" type="button" style="width:100%">Get my code</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="codewrap" id="codewrap" hidden>
+      <div class="codebar">
+        <strong>Your chatbot code</strong>
+        <span class="sz" id="codeSize"></span>
+        <div class="acts">
+          <button class="btn btn-ghost btn-sm" id="copyCode" type="button">Copy</button>
+          <button class="btn btn-ghost btn-sm" id="dlCode" type="button">Download</button>
+        </div>
+      </div>
+      <pre id="codeOut"><code></code></pre>
+    </div>
+
+    <div class="steps3">
+      <div class="step"><b>Step 1</b><p>Copy the block of code above. That is your whole chatbot — there is nothing else to download or sign up for.</p></div>
+      <div class="step"><b>Step 2</b><p>Paste it into your site right before the closing <code>&lt;/body&gt;</code> tag. On WordPress that is the footer; on Shopify, theme.liquid; on Squarespace, code injection.</p></div>
+      <div class="step"><b>Step 3</b><p>Save and reload your site. The bubble appears in the corner. Come back and rebuild any time you want to change an answer.</p></div>
+    </div>
+
+    <div class="sponsor" id="sponsor" hidden>
+      <div>
+        <div class="tag" id="spTag">From the people who built this tool</div>
+        <h4 id="spTitle"></h4>
+        <p id="spBody"></p>
+      </div>
+      <div class="go"><a class="btn btn-primary btn-sm" id="spLink" href="#" target="_blank" rel="noopener">Take a look</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="custom">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <h2>Want a chatbot that actually knows your business?</h2>
+        <p>The free bot answers the questions you wrote answers for. That covers most of what people ask, and it will never invent a price or a policy you did not approve.</p>
+        <p>A custom bot is a different animal. We train it on your services, your pricing, your service area and your booking process, then wire it into how you already work.</p>
+        <p class="meetcora"><img src="/images/bot-head-512.avif" width="512" height="512" alt="" loading="lazy">
+          <span><b>Meet Cora.</b> She is the bot we build for clients — she knows a service area, quotes from a real price list, and books straight into a calendar. The free one answers questions. Cora closes.</span></p>
+        <p>Custom builds start lower than most people expect, and there is no per-conversation meter on those either. Call <a href="tel:18004818638">1-800-481-8638</a> and we will scope it in about ten minutes.</p>
+        <div class="cta-row" style="justify-content:flex-start">
+          <a class="btn btn-primary" href="tel:18004818638">Talk about a custom bot</a>
+        </div>
+      </div>
+      <div class="pricecard">
+        <div class="tag" style="font-family:var(--display);font-size:.72rem;letter-spacing:.09em;color:#8FA3BF;text-transform:uppercase">Rather not touch the code?</div>
+        <div class="amt">$199 <small>one time</small></div>
+        <ul>
+          <li>We install your chatbot on your site for you</li>
+          <li>We host the file, so your page stays fast</li>
+          <li>We test it on desktop and mobile before you see it</li>
+          <li>Includes 12 months of hosting, then $49 a year</li>
+          <li>Or move the file to your own server, free, whenever</li>
+        </ul>
+        <a class="btn btn-primary" href="tel:18004818638" style="width:100%">Have us install it</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head"><h2>Questions people actually ask</h2></div>
+    <div class="faq">
+      <details open><summary>Is the chatbot generator really free?</summary><p>Yes. No account, no email, no card. The tool runs in your browser and hands you a code snippet you own outright. Nothing is metered, because nothing phones home to us.</p></details>
+      <details><summary>Do I need to know how to code?</summary><p>No. Fill in the form, watch the preview, copy one block of code, paste it before the closing body tag of your site. If you can edit your site's footer, you can install this.</p></details>
+      <details><summary>Will it work on WordPress, Wix, Shopify or Squarespace?</summary><p>Yes. Anywhere you can paste HTML: a WordPress footer or custom HTML block, Shopify theme.liquid, Wix custom code, Squarespace code injection, Webflow custom code, or a plain HTML file.</p></details>
+      <details><summary>Is this an AI chatbot or a rule-based one?</summary><p>Rule-based. It answers the questions you wrote answers for and never makes anything up. For most small businesses that is the safer choice, because a rule-based bot cannot invent a price, a warranty, or a promise you did not approve. If you want one trained on your own documents, that is our custom build.</p></details>
+      <details><summary>What does it cost to run each month?</summary><p>Nothing. The code lives in your page and runs in the visitor's browser. No server, no API call, no per-conversation charge. A traffic spike costs you nothing.</p></details>
+      <details><summary>What if I want you to install it?</summary><p>One-time $199. We install it on your site, host the file, and test it on desktop and mobile. That covers the first 12 months of hosting; after that it renews at $49 a year, or you move the file to your own server for free.</p></details>
+      <details><summary>Does it collect leads?</summary><p>Yes, if you turn on the message form. Visitors leave a name, phone number and message, and it opens their email app addressed to you. The lead lands in your inbox with no database and no privacy paperwork.</p></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>Worth reading before you launch</h2>
+      <p>None of these are ours and none of them sell chatbots. They are just the references we use when we build.</p></div>
+    <div class="reslist">
+      <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener"><b>WCAG accessibility guidelines</b><span>W3C — making sure everyone can use your chat widget</span></a>
+      <a href="https://developers.google.com/search/docs/appearance/page-experience" target="_blank" rel="noopener"><b>Page experience signals</b><span>Google Search Central — how add-ons affect your rankings</span></a>
+      <a href="https://www.nngroup.com/articles/chatbots/" target="_blank" rel="noopener"><b>Chatbot usability research</b><span>Nielsen Norman Group — what makes people abandon a chat</span></a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank" rel="noopener"><b>Browser storage reference</b><span>MDN — what a widget can and cannot keep on a visitor's device</span></a>
+      <a href="https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking" target="_blank" rel="noopener"><b>FTC endorsement guides</b><span>What you can and cannot claim in automated messages</span></a>
+      <a href="https://www.sba.gov/business-guide/manage-your-business/marketing-sales" target="_blank" rel="noopener"><b>Small business marketing guide</b><span>U.S. Small Business Administration</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img class="flogo" src="/images/conversational-ai-bot-logo.png" width="300" height="129" alt="conversationalaibot.com">
+        <p class="addr">1001 Bannock St #660<br>Denver, CO 80204<br><a href="tel:18004818638">1-800-481-8638</a></p>
+      </div>
+      <div>
+        <h5>Chatbots</h5>
+        <ul>
+          <li><a href="#builder">Free chatbot generator</a></li>
+          <li><a href="#custom">Custom chatbot builds</a></li>
+          <li><a href="#custom">Install for $199</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Marketing</h5>
+        <ul>
+          <li><a href="https://eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a></li>
+          <li><a href="https://searchconverts.com" target="_blank" rel="noopener">Search Converts</a></li>
+          <li><a href="https://advertisingforcontractors.com" target="_blank" rel="noopener">Advertising for Contractors</a></li>
+          <li><a href="https://mysaleshelp.com" target="_blank" rel="noopener">My Sales Help</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Also ours</h5>
+        <ul>
+          <li><a href="https://www.agingsafelybaths.com" target="_blank" rel="noopener">Aging Safely Baths</a></li>
+          <li><a href="https://showers4less.com" target="_blank" rel="noopener">Showers4Less</a></li>
+          <li><a href="https://denverseo.io" target="_blank" rel="noopener">Denver SEO</a></li>
+          <li><a href="https://buyweburl.com" target="_blank" rel="noopener">Domains &amp; hosting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbase">
+      <span>&copy; <span id="yr">2026</span> conversationalaibot.com</span>
+      <span>Built in Denver, Colorado</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ============================================================
+   WIDGET SOURCE — single source of truth.
+   The live preview runs this exact function. The exported code
+   is this exact function stringified. Preview cannot drift from
+   what the customer ships.
+   ============================================================ */
+function CAIBOT(cfg, mount){
+  var D=document, root=mount||D.body, fixed=!mount;
+  var ns='caib'+Math.random().toString(36).slice(2,7);
+  var C=cfg.color||'#0A84FF', side=cfg.side==='left'?'left':'right';
+
+  var css=''
+  +'.'+ns+'-w,.'+ns+'-w *{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}'
+  +'.'+ns+'-w{position:'+(fixed?'fixed':'absolute')+';bottom:18px;'+side+':18px;z-index:2147483000;}'
+  +'.'+ns+'-b{width:60px;height:60px;border-radius:50%;border:0;cursor:pointer;background:'+C+';box-shadow:0 6px 22px rgba(0,0,0,.28);display:flex;align-items:center;justify-content:center;transition:transform .2s}'
+  +'.'+ns+'-b:hover{transform:scale(1.07)}'
+  +'.'+ns+'-b svg{width:30px;height:30px;fill:#fff}'
+  +'.'+ns+'-p{position:absolute;bottom:74px;'+side+':0;width:330px;max-width:calc(100vw - 32px);background:#fff;border-radius:16px;box-shadow:0 18px 54px rgba(0,0,0,.3);overflow:hidden;display:none;flex-direction:column;max-height:'+(fixed?'min(560px,calc(100vh - 120px))':'340px')+'}'
+  +'.'+ns+'-p.on{display:flex}'
+  +'.'+ns+'-h{background:'+C+';color:#fff;padding:14px 16px;display:flex;align-items:center;gap:10px}'
+  +'.'+ns+'-h b{font-size:15px;display:block;line-height:1.25}'
+  +'.'+ns+'-h i{font-size:11.5px;opacity:.85;font-style:normal;display:flex;align-items:center;gap:5px}'
+  +'.'+ns+'-h i u{width:6px;height:6px;border-radius:50%;background:#4ADE80;display:inline-block}'
+  +'.'+ns+'-x{margin-left:auto;background:transparent;border:0;color:#fff;font-size:22px;cursor:pointer;line-height:1;opacity:.85;padding:0 2px}'
+  +'.'+ns+'-x:hover{opacity:1}'
+  +'.'+ns+'-m{flex:1;overflow-y:auto;padding:14px;background:#F6F8FB;min-height:120px}'
+  +'.'+ns+'-r{max-width:84%;padding:9px 13px;border-radius:14px;margin-bottom:9px;font-size:13.5px;line-height:1.5;white-space:pre-wrap;word-wrap:break-word}'
+  +'.'+ns+'-r.bot{background:#fff;color:#1B2432;border-bottom-left-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,.07)}'
+  +'.'+ns+'-r.me{background:'+C+';color:#fff;margin-left:auto;border-bottom-right-radius:4px}'
+  +'.'+ns+'-t{display:flex;gap:4px;padding:11px 13px;background:#fff;border-radius:14px;width:52px;box-shadow:0 1px 3px rgba(0,0,0,.07);margin-bottom:9px}'
+  +'.'+ns+'-t s{width:6px;height:6px;border-radius:50%;background:#B9C3D1;text-decoration:none;animation:'+ns+'bl 1.3s infinite}'
+  +'.'+ns+'-t s:nth-child(2){animation-delay:.18s}.'+ns+'-t s:nth-child(3){animation-delay:.36s}'
+  +'@keyframes '+ns+'bl{0%,60%,100%{opacity:.3}30%{opacity:1}}'
+  +'.'+ns+'-q{padding:10px 12px;border-top:1px solid #E8EDF3;background:#fff;display:flex;flex-wrap:wrap;gap:6px}'
+  +'.'+ns+'-q button{border:1px solid '+C+';color:'+C+';background:#fff;border-radius:999px;padding:7px 13px;font-size:12.5px;cursor:pointer;line-height:1.3;text-align:left}'
+  +'.'+ns+'-q button:hover{background:'+C+';color:#fff}'
+  +'.'+ns+'-q a{border:1px solid #DCE3EC;color:#42506A;background:#fff;border-radius:999px;padding:7px 13px;font-size:12.5px;text-decoration:none;line-height:1.3}'
+  +'.'+ns+'-q a:hover{border-color:'+C+';color:'+C+'}'
+  +'.'+ns+'-f{padding:11px 12px;border-top:1px solid #E8EDF3;background:#fff;display:none}'
+  +'.'+ns+'-f.on{display:block}'
+  +'.'+ns+'-f input,.'+ns+'-f textarea{width:100%;border:1px solid #DCE3EC;border-radius:8px;padding:8px 10px;font-size:13px;margin-bottom:7px;color:#1B2432;background:#fff}'
+  +'.'+ns+'-f textarea{resize:vertical;min-height:54px}'
+  +'.'+ns+'-f button{width:100%;background:'+C+';color:#fff;border:0;border-radius:8px;padding:10px;font-size:13.5px;font-weight:600;cursor:pointer}'
+  +'.'+ns+'-e{font-size:10.5px;color:#93A0B4;text-align:center;padding:7px;background:#fff;border-top:1px solid #F0F3F7}'
+  +'.'+ns+'-e a{color:#93A0B4;text-decoration:none}'
+  +'.'+ns+'-n{position:absolute;bottom:70px;'+side+':4px;background:#fff;color:#1B2432;padding:10px 13px;border-radius:13px;box-shadow:0 8px 26px rgba(0,0,0,.17);font-size:13px;max-width:230px;cursor:pointer;line-height:1.45;display:none}'
+  +'.'+ns+'-n.on{display:block}';
+
+  var st=D.createElement('style'); st.textContent=css; D.head.appendChild(st);
+
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+  var wrap=D.createElement('div'); wrap.className=ns+'-w';
+  var items=cfg.items||[];
+
+  var quick='';
+  for(var i=0;i<items.length;i++){quick+='<button type="button" data-i="'+i+'">'+esc(items[i].q)+'</button>';}
+  if(cfg.phone){quick+='<a href="tel:'+esc(String(cfg.phone).replace(/[^0-9+]/g,''))+'">Call us</a>';}
+  if(cfg.email&&cfg.lead){quick+='<button type="button" data-lead="1">Leave a message</button>';}
+  else if(cfg.email){quick+='<a href="mailto:'+esc(cfg.email)+'">Email us</a>';}
+
+  wrap.innerHTML=''
+  +'<div class="'+ns+'-n" role="button" tabindex="0">'+esc(cfg.greeting)+'</div>'
+  +'<div class="'+ns+'-p" role="dialog" aria-label="Chat with '+esc(cfg.name)+'">'
+  +  '<div class="'+ns+'-h"><div><b>'+esc(cfg.name)+'</b><i><u></u>Usually replies right away</i></div>'
+  +    '<button class="'+ns+'-x" type="button" aria-label="Close chat">&times;</button></div>'
+  +  '<div class="'+ns+'-m"></div>'
+  +  '<div class="'+ns+'-q">'+quick+'</div>'
+  +  '<div class="'+ns+'-f"><input type="text" placeholder="Your name"><input type="tel" placeholder="Phone number">'
+  +    '<textarea placeholder="How can we help?"></textarea><button type="button">Send message</button></div>'
+  +  '<div class="'+ns+'-e">Chatbot by <a href="https://conversationalaibot.com" target="_blank" rel="noopener">conversationalaibot.com</a></div>'
+  +'</div>'
+  +'<button class="'+ns+'-b" type="button" aria-label="Open chat"><svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM7 9h10v2H7V9zm0 4h7v2H7v-2z"/></svg></button>';
+
+  root.appendChild(wrap);
+
+  var panel=wrap.querySelector('.'+ns+'-p'),
+      msgs =wrap.querySelector('.'+ns+'-m'),
+      bubble=wrap.querySelector('.'+ns+'-b'),
+      nudge=wrap.querySelector('.'+ns+'-n'),
+      form =wrap.querySelector('.'+ns+'-f'),
+      started=false, nudgeTimer=null;
+
+  function add(text,who){
+    var d=D.createElement('div'); d.className=ns+'-r '+who; d.textContent=text;
+    msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight; return d;
+  }
+  function botSay(text){
+    var t=D.createElement('div'); t.className=ns+'-t';
+    t.innerHTML='<s></s><s></s><s></s>'; msgs.appendChild(t);
+    msgs.scrollTop=msgs.scrollHeight;
+    setTimeout(function(){ if(t.parentNode){t.parentNode.removeChild(t);} add(text,'bot'); },
+      Math.min(1100, 260+text.length*11));
+  }
+  function open(){
+    panel.classList.add('on'); nudge.classList.remove('on');
+    if(nudgeTimer){clearTimeout(nudgeTimer);nudgeTimer=null;}
+    if(!started){started=true; add(cfg.greeting,'bot');}
+    msgs.scrollTop=msgs.scrollHeight;
+  }
+  function close(){ panel.classList.remove('on'); }
+
+  bubble.addEventListener('click',function(){ panel.classList.contains('on')?close():open(); });
+  wrap.querySelector('.'+ns+'-x').addEventListener('click',close);
+  nudge.addEventListener('click',open);
+  nudge.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open();} });
+
+  wrap.querySelector('.'+ns+'-q').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    if(b.getAttribute('data-lead')){
+      add('Leave a message','me');
+      form.classList.add('on');
+      botSay('Sure — tell us your name, a number to reach you, and what you need. We will get back to you.');
+      return;
+    }
+    var idx=parseInt(b.getAttribute('data-i'),10);
+    var it=items[idx]; if(!it) return;
+    add(it.q,'me'); botSay(it.a);
+  });
+
+  form.querySelector('button').addEventListener('click',function(){
+    var ins=form.querySelectorAll('input'), ta=form.querySelector('textarea');
+    var nm=ins[0].value.trim(), ph=ins[1].value.trim(), ms=ta.value.trim();
+    if(!nm||!ms){ botSay('We just need your name and a quick note before we can send that along.'); return; }
+    var body='Name: '+nm+'\nPhone: '+ph+'\n\n'+ms;
+    if(cfg.email && !cfg.preview){
+      window.location.href='mailto:'+cfg.email+'?subject='+encodeURIComponent('Website chat from '+nm)
+        +'&body='+encodeURIComponent(body);
+    }
+    form.classList.remove('on'); ins[0].value=''; ins[1].value=''; ta.value='';
+    add(ms,'me');
+    botSay(cfg.preview
+      ? 'Got it. On your live site this opens the visitor\u2019s email app addressed to you, so the message lands in your inbox.'
+      : 'Thanks '+nm+'. Your email app should be open with the message ready to send.');
+  });
+
+  if(cfg.nudge){
+    nudgeTimer=setTimeout(function(){ if(!panel.classList.contains('on')) nudge.classList.add('on'); }, 6000);
+  }
+
+  return { destroy:function(){
+    if(nudgeTimer) clearTimeout(nudgeTimer);
+    if(wrap.parentNode) wrap.parentNode.removeChild(wrap);
+    if(st.parentNode) st.parentNode.removeChild(st);
+  }};
+}
+
+/* ============================== PRESETS ============================== */
+var PRESETS=[
+ {id:'general',tab:'General business',name:'Your Business',
+  greeting:'Hi there! How can we help you today?',
+  items:[
+   {q:'What are your hours?',a:'We are open Monday through Friday, 8am to 5pm, and Saturday 9am to 2pm. Closed Sunday.'},
+   {q:'Where are you located?',a:'We are at 123 Main Street, and we serve the whole metro area. Parking is free out front.'},
+   {q:'Get a quote',a:'Happy to. Tell us what you need and we will get you a written quote, usually the same day.'},
+   {q:'Talk to a person',a:'Of course. Give us a call and someone here will pick up — no phone tree.'}]},
+
+ {id:'contractor',tab:'Contractor',name:'Your Contracting Co.',
+  greeting:'Hi! Need an estimate, or have a question about a project?',
+  items:[
+   {q:'Do you serve my area?',a:'We cover the metro area and about 40 miles out. Tell us your zip code and we will confirm.'},
+   {q:'Are you licensed and insured?',a:'Yes — fully licensed, bonded and insured. We are glad to send you the certificates before any work starts.'},
+   {q:'How much does it cost?',a:'It depends on the scope, so we do not guess. Estimates are free and we put the number in writing before anyone touches anything.'},
+   {q:'How soon can you start?',a:'Most projects start within two to three weeks. Emergency repairs we handle much faster — call us.'}]},
+
+ {id:'restaurant',tab:'Restaurant',name:'Your Restaurant',
+  greeting:'Hi! Looking for our menu, hours, or a table tonight?',
+  items:[
+   {q:'See the menu',a:'Our full menu is on the site, and the kitchen runs specials most nights. Ask us what is on today.'},
+   {q:'Book a table',a:'We take reservations for parties of four or more. Tell us the day, time and headcount and we will hold it.'},
+   {q:'Do you deliver?',a:'We deliver within about five miles and we do takeout all day. Call it in and it will be ready in 20 minutes.'},
+   {q:'Parking and hours',a:'Open 11am to 10pm daily, until 11pm on Friday and Saturday. Free lot behind the building.'}]},
+
+ {id:'realestate',tab:'Real estate',name:'Your Real Estate Team',
+  greeting:'Hi! Buying, selling, or just watching the market?',
+  items:[
+   {q:'What is my home worth?',a:'We will run a real comparative market analysis, not an online guess. Send us your address and we will have it back to you within a day.'},
+   {q:'I want to see a listing',a:'Tell us which property and a couple of times that work, and we will set up the showing.'},
+   {q:'Help me buy',a:'Let us start with your price range, must-haves, and timeline. From there we will send you matches as they hit the market.'},
+   {q:'What are your fees?',a:'We will walk you through the commission structure up front, in plain numbers, before you sign anything.'}]},
+
+ {id:'salon',tab:'Salon &amp; spa',name:'Your Salon',
+  greeting:'Hi! Want to book, or have a question about a service?',
+  items:[
+   {q:'Book an appointment',a:'Tell us the service and a day that works and we will find you a slot. Same-week openings are common.'},
+   {q:'What do services cost?',a:'Pricing depends on length and thickness, so we quote at consultation. Consultations are always free.'},
+   {q:'Do you take walk-ins?',a:'When we have a gap, yes. Appointments are the safe bet, especially Friday and Saturday.'},
+   {q:'Cancellation policy',a:'Just give us 24 hours notice and there is no charge. Life happens — talk to us.'}]},
+
+ {id:'medical',tab:'Clinic',name:'Your Clinic',
+  greeting:'Hello. How can we help you today?',
+  items:[
+   {q:'Book an appointment',a:'Tell us what you need to be seen for and a few times that work, and our front desk will confirm.'},
+   {q:'Do you take my insurance?',a:'We accept most major plans. Tell us your carrier and we will verify coverage before your visit.'},
+   {q:'New patient forms',a:'You can fill out new patient paperwork ahead of time — it saves about fifteen minutes at check-in.'},
+   {q:'Office hours',a:'We are open Monday through Thursday 8am to 5pm and Friday 8am to noon.'}]}
+];
+
+var COLORS=['#0A84FF','#22C55E','#F97316','#8B5CF6','#E11D48','#0F172A','#0891B2','#CA8A04'];
+
+/* sponsor rotation — runs on each code generation */
+var SPONSORS=[
+ {t:'Eye To Ad Media',b:'SEO, AIO and GEO for small businesses that are tired of paying an agency to do nothing. Denver-based since 2012.',u:'https://eyetoad.com',c:'Take a look'},
+ {t:'Search Converts',b:'Full-service marketing: sites, content, local search, and the buy-sell groups we run across the country.',u:'https://searchconverts.com',c:'See what we do'},
+ {t:'Aging Safely Baths',b:'Walk-in tubs and accessible showers, made in the USA. If you have a parent who should not be climbing over a tub wall, start here.',u:'https://www.agingsafelybaths.com',c:'Browse tubs'},
+ {t:'Showers4Less',b:'Roll-in showers, barrier-free bases and wall kits, direct, without the remodeler markup.',u:'https://showers4less.com',c:'See shower kits'}
+];
+
+/* =============================== APP =============================== */
+(function(){
+  var $=function(s){return document.querySelector(s);};
+  var state=null, live=null, spIndex=0;
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  function toast(msg){
+    var t=$('#toast'); t.textContent=msg; t.classList.add('on');
+    clearTimeout(t._h); t._h=setTimeout(function(){t.classList.remove('on');},2600);
+  }
+
+  function loadPreset(p){
+    state={
+      name:p.name, greeting:p.greeting,
+      items:p.items.map(function(o){return {q:o.q,a:o.a};}),
+      phone:'', email:'', color:'#0A84FF', side:'right', lead:true, nudge:true
+    };
+    $('#bizName').value=state.name;
+    $('#greeting').value=state.greeting;
+    $('#phone').value=''; $('#email').value='';
+    renderQA(); renderSwatches(); render();
+  }
+
+  function renderQA(){
+    var host=$('#qaList'); host.innerHTML='';
+    state.items.forEach(function(it,i){
+      var d=document.createElement('div'); d.className='qa';
+      d.innerHTML='<div class="qa-top"><input type="text" maxlength="42" placeholder="Button text visitors tap"></div>'
+                 +'<textarea maxlength="320" placeholder="What the chatbot replies"></textarea>';
+      var q=d.querySelector('input'), a=d.querySelector('textarea');
+      q.value=it.q; a.value=it.a;
+      q.setAttribute('aria-label','Question '+(i+1));
+      a.setAttribute('aria-label','Answer '+(i+1));
+      q.addEventListener('input',function(){state.items[i].q=q.value;render();});
+      a.addEventListener('input',function(){state.items[i].a=a.value;render();});
+      var del=document.createElement('button');
+      del.className='del'; del.type='button'; del.innerHTML='&times;';
+      del.setAttribute('aria-label','Remove question '+(i+1));
+      del.addEventListener('click',function(){
+        if(state.items.length<=1){toast('Keep at least one question');return;}
+        state.items.splice(i,1); renderQA(); render();
+      });
+      d.querySelector('.qa-top').appendChild(del);
+      host.appendChild(d);
+    });
+    $('#addQ').disabled = state.items.length>=6;
+    $('#addQ').textContent = state.items.length>=6 ? 'Six questions is the practical maximum' : '+ Add another question';
+  }
+
+  function renderSwatches(){
+    var host=$('#swatches'); host.innerHTML='';
+    COLORS.forEach(function(c){
+      var b=document.createElement('button');
+      b.className='sw'; b.type='button'; b.style.background=c;
+      b.setAttribute('aria-label','Accent color '+c);
+      b.setAttribute('aria-pressed', c===state.color?'true':'false');
+      b.addEventListener('click',function(){ state.color=c; renderSwatches(); render(); });
+      host.appendChild(b);
+    });
+  }
+
+  function cleanState(){
+    return {
+      name:(state.name||'').trim()||'Our Business',
+      greeting:(state.greeting||'').trim()||'Hi! How can we help?',
+      items:state.items
+        .map(function(o){return {q:(o.q||'').trim(),a:(o.a||'').trim()};})
+        .filter(function(o){return o.q&&o.a;}),
+      phone:(state.phone||'').trim(),
+      email:(state.email||'').trim(),
+      color:state.color, side:state.side, lead:!!state.lead, nudge:!!state.nudge
+    };
+  }
+
+  function render(){
+    if(live){ live.destroy(); live=null; }
+    var cfg=cleanState();
+    cfg.preview=true;
+    if(!cfg.items.length){ cfg.items=[{q:'Add a question on the left',a:'Your answer shows up right here.'}]; }
+    live=CAIBOT(cfg, document.getElementById('stage'));
+    $('#fakeUrl').textContent=(cfg.name.toLowerCase().replace(/[^a-z0-9]+/g,'')||'yourbusiness')+'.com';
+    if(!$('#codewrap').hidden) buildCode();
+  }
+
+  function snippet(){
+    var cfg=cleanState();
+    if(!cfg.items.length) return null;
+    /* escape </ so nothing a customer types can terminate their own script block */
+    var json = JSON.stringify(cfg).replace(/<\//g, '<\\/');
+    return '<!-- Chatbot by conversationalaibot.com — free, no account, yours to keep -->\n'
+      + '<script>\n(' + CAIBOT.toString() + ')(' + json + ');\n<\/script>';
+  }
+
+  function buildCode(){
+    var s=snippet(); if(!s) return null;
+    $('#codeOut').querySelector('code').textContent=s;
+    $('#codeSize').textContent=(Math.round(s.length/1024*10)/10)+' KB \u00b7 nothing else to install';
+    return s;
+  }
+
+  function rotateSponsor(){
+    var s=SPONSORS[spIndex % SPONSORS.length]; spIndex++;
+    $('#spTitle').textContent=s.t; $('#spBody').textContent=s.b;
+    $('#spLink').href=s.u; $('#spLink').textContent=s.c;
+    $('#sponsor').hidden=false;
+  }
+
+  /* ---- tabs ---- */
+  var tabHost=$('#tabs');
+  PRESETS.forEach(function(p,i){
+    var b=document.createElement('button');
+    b.className='tab'; b.type='button'; b.setAttribute('role','tab');
+    b.innerHTML=p.tab;
+    b.setAttribute('aria-selected', i===0?'true':'false');
+    b.addEventListener('click',function(){
+      Array.prototype.forEach.call(tabHost.children,function(c){c.setAttribute('aria-selected','false');});
+      b.setAttribute('aria-selected','true');
+      loadPreset(p);
+    });
+    tabHost.appendChild(b);
+  });
+
+  /* ---- inputs ---- */
+  $('#bizName').addEventListener('input',function(){state.name=this.value;render();});
+  $('#greeting').addEventListener('input',function(){state.greeting=this.value;render();});
+  $('#phone').addEventListener('input',function(){state.phone=this.value;render();});
+  $('#email').addEventListener('input',function(){state.email=this.value;render();});
+  $('#optLead').addEventListener('change',function(){state.lead=this.checked;render();});
+  $('#optNudge').addEventListener('change',function(){state.nudge=this.checked;render();});
+  $('#addQ').addEventListener('click',function(){
+    if(state.items.length>=6) return;
+    state.items.push({q:'New question',a:'Your answer here.'});
+    renderQA(); render();
+  });
+  $('#posSeg').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    state.side=b.getAttribute('data-pos');
+    Array.prototype.forEach.call(this.children,function(c){
+      c.setAttribute('aria-pressed', c===b?'true':'false');});
+    render();
+  });
+
+  /* ---- code out ---- */
+  $('#getCode').addEventListener('click',function(){
+    var s=buildCode();
+    if(!s){ toast('Add at least one question and answer first'); return; }
+    $('#codewrap').hidden=false;
+    rotateSponsor();
+    $('#codewrap').scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  $('#copyCode').addEventListener('click',function(){
+    var s=buildCode(); if(!s) return;
+    navigator.clipboard.writeText(s).then(function(){ toast('Copied. Paste it before </body>'); },
+      function(){ toast('Select the code and copy it manually'); });
+  });
+  $('#dlCode').addEventListener('click',function(){
+    var s=buildCode(); if(!s) return;
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([s],{type:'text/plain'}));
+    a.download='chatbot-snippet.txt'; a.click();
+    setTimeout(function(){URL.revokeObjectURL(a.href);},1200);
+    toast('Downloaded');
+  });
+
+  loadPreset(PRESETS[0]);
+})();
+
+/* =========================== STARFIELD =========================== */
+(function(){
+  var cv=document.getElementById('stars'); if(!cv) return;
+  var ctx=cv.getContext('2d'), stars=[], w=0, h=0, raf=null;
+  var still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function size(){
+    var r=cv.getBoundingClientRect();
+    var dpr=Math.min(window.devicePixelRatio||1,2);
+    w=r.width; h=r.height;
+    cv.width=w*dpr; cv.height=h*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    var n=Math.round(Math.min(300, (w*h)/3600));
+    stars=[];
+    for(var i=0;i<n;i++){
+      stars.push({x:Math.random()*w,y:Math.random()*h,
+        r:Math.random()*1.25+.25,
+        a:Math.random()*.65+.2,
+        s:Math.random()*.016+.003,
+        d:Math.random()*Math.PI*2,
+        v:Math.random()*.055+.012});
+    }
+  }
+  function nebula(){
+    var g1=ctx.createRadialGradient(w*.26,h*.32,0,w*.26,h*.32,Math.max(w,h)*.55);
+    g1.addColorStop(0,'rgba(44,120,255,.11)'); g1.addColorStop(1,'rgba(44,120,255,0)');
+    ctx.fillStyle=g1; ctx.fillRect(0,0,w,h);
+    var g2=ctx.createRadialGradient(w*.76,h*.66,0,w*.76,h*.66,Math.max(w,h)*.5);
+    g2.addColorStop(0,'rgba(140,70,255,.11)'); g2.addColorStop(1,'rgba(140,70,255,0)');
+    ctx.fillStyle=g2; ctx.fillRect(0,0,w,h);
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h); nebula();
+    for(var i=0;i<stars.length;i++){
+      var s=stars[i];
+      if(!still){ s.d+=s.s; s.y-=s.v; if(s.y<-2) s.y=h+2; }
+      var a=still? s.a : s.a*(0.62+0.38*Math.sin(s.d));
+      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,6.2832);
+      ctx.fillStyle='rgba(203,232,255,'+a.toFixed(3)+')'; ctx.fill();
+    }
+    if(!still) raf=requestAnimationFrame(draw);
+  }
+  function start(){ if(raf) cancelAnimationFrame(raf); size(); draw(); }
+  window.addEventListener('resize',function(){ clearTimeout(cv._t); cv._t=setTimeout(start,180); });
+  start();
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden){ if(raf) cancelAnimationFrame(raf); raf=null; }
+    else if(!still && !raf){ raf=requestAnimationFrame(draw); }
+  });
+})();
+</script>
+</body>
+</html>
