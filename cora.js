@@ -151,6 +151,120 @@ var KB = [
        'answer anything','open ended','most powerful'],
   say:function(){ return "Now you're asking the right question.\n\nEverything on this page is rule-based and free. But when we build a custom bot, we can wire it into a real AI model and train it on your site, your price list, your service docs — then it answers things nobody thought to script.\n\nThe trick is we put guardrails on it, so it still can't invent a price or promise a warranty. You get the open-ended conversation without the liability. That's the version most people don't know is available."; }},
 
+ {id:'mktjoke',
+  pat:['marketing joke','seo joke','business joke','advertising joke','agency joke','work joke','marketing humor'],
+  say:function(){ return pick([
+    "Why did the marketer get kicked off the trampoline? Too many bounces.",
+    "An SEO expert walks into a bar, bars, pub, tavern, public house, Irish bar, bar near me, drinks...",
+    "Why do marketers love elevators? Great pitch, captive audience, guaranteed impressions.",
+    "My PPC guy offered to work for exposure. I told him that's how I pay my landlord too.",
+    "Why did the billboard break up with the bus bench? It needed more impressions.",
+    "A client asked for a logo like Nike, but original. We turned the swoosh around. He loved it.",
+    "What do you call marketing without a plan? A budget.",
+    "Why don't marketers play hide and seek anymore? Nobody can find anything organically.",
+    "Our analytics guy has a favorite number. It's \"it depends.\"",
+    "Why did the funnel go to therapy? Too many issues at the bottom.",
+    "A consultant charged forty grand to rename a company \"The Company.\" Honestly? Memorable.",
+    "What's the difference between a marketer and an optimist? About one quarter.",
+    "My cold emails have a 100% response rate. Every single one says \"unsubscribe.\"",
+    "Why was the social media manager calm during the crisis? She'd already scheduled the apology.",
+    "What's a content marketer's favorite exercise? Running out of ideas.",
+    "Why did the website go to the doctor? Bad case of bounce.",
+    "Client said make the logo bigger. We made it the entire page. He said perfect, now bigger.",
+    "Why are SEO people terrible dinner guests? They keep asking what's ranking.",
+    "What do you call a campaign with no call to action? A poem.",
+    "I asked our designer for something that pops. He handed me bubble wrap. Fair."
+  ]);}},
+
+ {id:'joke',
+  pat:['joke','funny','make me laugh','entertain','cheer me up','tell me something','bored','say something funny','got any jokes'],
+  say:function(){ return pick([
+    "Why don't skeletons fight each other? They don't have the guts.",
+    "What do you call cheese that isn't yours? Nacho cheese.",
+    "I told my wife she should embrace her mistakes. She hugged me.",
+    "Why did the scarecrow win an award? He was outstanding in his field.",
+    "What do you call a fake noodle? An impasta.",
+    "Why can't you trust stairs? They're always up to something.",
+    "I used to hate facial hair. Then it grew on me.",
+    "What did the janitor shout jumping out of the closet? Supplies!",
+    "Why did the coffee file a police report? It got mugged.",
+    "What's orange and sounds like a parrot? A carrot.",
+    "I'm reading a book about anti-gravity. Impossible to put down.",
+    "Why did the bicycle fall over? It was two tired.",
+    "What do you call a bear with no teeth? A gummy bear.",
+    "I ordered a chicken and an egg online. I'll let you know.",
+    "Why don't eggs tell jokes? They'd crack each other up.",
+    "What do you call a dinosaur with a big vocabulary? A thesaurus.",
+    "My dog used to chase people on a bike. So I took the bike away.",
+    "What did one wall say to the other? I'll meet you at the corner.",
+    "Why did the math book look so sad? Too many problems.",
+    "I tried to catch fog yesterday. Mist.",
+    "Why don't chatbots ever get lost? We only go where somebody told us to go.",
+    "I'd tell you a joke about recursion, but first I'd tell you a joke about recursion."
+  ]);}},
+
+ {id:'pep',
+  pat:['pep talk','encourage','encouragement','motivate','motivation','i need a win','rough day','bad day',
+       'hard day','tough day','struggling','discouraged','give up','giving up','i cant do this','cheer up',
+       'feeling down','defeated','burned out','burnt out','exhausted','nothing is working','slow month','no leads'],
+  say:function(){ return pick([
+    "Rough stretch doesn't mean wrong direction. You've gotten through every single hard day so far, which is a 100% record.\n\nGo do one small thing. Just one. Momentum is sneaky like that.",
+    "It's always darkest before the dawn. Corny, ancient, and still true, which is usually how you can tell something's true.\n\nYou got this.",
+    "Slow months are part of the deal. Every business owner you admire had a stretch where they weren't sure it would work, and they just didn't quit that week.\n\nYou're stronger than you know.",
+    "Here's the thing: you built something. Most people just talk about it. That's not nothing, even on a day that feels like nothing.\n\nKeep going.",
+    "One step. Then another. That's the whole strategy and it has never once failed anybody who actually did it.\n\nYou can do this.",
+    "Take the win where you can find it today, even if the win is just showing up. Some days that IS the accomplishment.\n\nProud of you, and I'm a robot.",
+    "Whatever's on your plate right now, you've handled harder. You just don't have the distance to see it yet.\n\nDeep breath. Next thing."
+  ]);}},
+
+ {id:'overwhelmed',
+  pat:['overwhelmed','too much','swamped','drowning','busy','so busy','stressed','stress','no time','behind',
+       'buried','cant keep up','too many things','spread thin','juggling'],
+  say:function(){ return pick([
+    "That's a real feeling and most business owners live there permanently.\n\nWant a trick? Write down everything rattling around your head, then circle the one thing that actually moves money. Do that one. The list will still be there and it will feel smaller.",
+    "Swamped is the default setting when you're the one running it.\n\nPick the thing that's been nagging you longest. It's usually taking up more space in your head than it will take to finish.",
+    "Deep breath. Nobody is doing this gracefully — they just aren't posting about the messy part.\n\nWhat's the one thing that if it got done today, the day counts as a win?"
+  ]);}},
+
+ {id:'reallife',
+  pat:['kids','my kid','school pickup','pick up my kids','daycare','soccer practice','take out the trash',
+       'running late','im late','late for work','traffic','dinner','laundry','dishes','errands','groceries',
+       'my wife','my husband','my dog','weekend','monday','friday','vacation','day off'],
+  say:function(){ return pick([
+    "Ah, the actual job. The one that doesn't pay and doesn't stop.\n\nGo handle it — I'm scripted, I don't get impatient. I'll be right here in the corner.",
+    "Real life beats chatbot every time. Go deal with it.\n\nWhen you're back, building your bot takes about two minutes, so it fits in the gap.",
+    "Honestly respect it. The business stuff will wait ten minutes; some of that other stuff will not.\n\nI'll hold your spot.",
+    "That's the part nobody puts in the entrepreneur highlight reel.\n\nGo. I have no concept of time and literally cannot be annoyed."
+  ]);}},
+
+ {id:'good',
+  pat:['great day','good day','doing great','excited','happy','pumped','stoked','closed a deal','got a client',
+       'new customer','big win','crushing it','things are good','feeling good','landed a job','booked out'],
+  say:function(){ return pick([
+    "That's a great day! Take thirty seconds and actually enjoy it — most people blow straight past the wins and only stop for the problems.\n\nNow, want to make sure the next one finds you too?",
+    "Love hearing it. Write that one down somewhere, because in three months on a rough Tuesday you'll want the reminder that good weeks happen.\n\nCongratulations, seriously.",
+    "Excellent. Momentum is real and it compounds.\n\nWhile you're riding it: is there anything on your site making people wait for an answer? That's usually where the next one leaks out."
+  ]);}},
+
+ {id:'tasks',
+  pat:['remind me','reminder','to do','todo','task','what should i do','forgot','did i forget','checklist',
+       'gbp','google business','google business profile','payroll','invoice','invoices','follow up','followup',
+       'reviews','ask for reviews','what am i forgetting','productive'],
+  say:function(){ return pick([
+    "I can't actually set reminders — I'm rule-based, I have no memory and no calendar. But I can ask the annoying questions:\n\nDid the Google Business Profile post go up today?\nDid payroll get run?\nAre there invoices sitting unsent?\nAnyone waiting on a callback from yesterday?\n\nOne of those usually lands.",
+    "No memory here, so consider this the nagging-friend version:\n\nGBP post today? Invoices out? Payroll handled? Did you ask your last happy customer for a review?\n\nThat last one is free money and almost everybody skips it.",
+    "Here's the small list that quietly runs a local business:\n\nPost to Google Business Profile. Answer the reviews you have. Send the invoices. Follow up the quote from last week. Pay yourself.\n\nWhich one did you just wince at?"
+  ]);}},
+
+ {id:'helpbiz',
+  pat:['help my business','grow my business','more customers','more leads','get more clients','marketing help',
+       'need more work','how can you help my business','business advice','slow','phone not ringing'],
+  say:function(){ return pick([
+    "Genuinely — what's the bottleneck? There are only three:\n\nNot enough people finding you. Enough people finding you but not contacting you. Or plenty of contacts and nobody following up fast enough.\n\nThey need completely different fixes, and most people guess wrong about which one they have.",
+    "The chatbot fixes exactly one of those problems: people who land on your site, don't find the answer, and leave. That's it. I'm not going to pretend it's a growth strategy.\n\nIf the problem is that nobody's landing on the site in the first place, that's search work — call 1-800-481-8638 and ask about that instead.",
+    "Start with the boring question: of the people who already visit your site, how many contact you? If it's tiny, fix the site. If it's decent but the volume's low, you have a traffic problem, not a website problem.\n\nDifferent fix, different budget."
+  ]);}},
+
  {id:'custom',
   pat:['custom','character','mascot','like you','superhero','super hero','doctor','auto glass','glass','contractor',
        'can you look like','design','my own bot','make me one','cartoon','avatar'],
@@ -221,7 +335,7 @@ var FALLBACK = [
   "I don't have a written answer for that, and I won't make one up. That restraint is the entire product.\n\nAsk me about pricing, install, or custom characters."
 ];
 
-var QUICK = ['What can you do?','Are you an AI?','How much is it?','Make me a custom one','How do I install it?'];
+var QUICK = ['What can you do?','Are you an AI?','How much is it?','Tell me a joke','I need a pep talk','What am I forgetting?'];
 var TRY = ["sup","wazzzup my dude","hey hows it hanging","are you chatgpt?","can i train you?",
            "how much does this cost","make me a superhero bot","will it slow my site down","tell me a joke","peace out"];
 
@@ -271,35 +385,64 @@ function openChat(){
 }
 function closeChat(){ panel.classList.remove('on'); }
 
-function fireworks(x,y){
+function fireworks(x,y,scale){
+  /* WCAG 2.3.1 note: this is many small discrete points, never a full-screen
+     flash or luminance change. Bursts are spaced >340ms so nothing can read
+     as a strobe, and the whole thing is skipped for reduced-motion users. */
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var colors=['#22D3FF','#0A84FF','#9E7BFF','#FFB454','#4ADE80','#FF6FA5'];
-  for(var i=0;i<58;i++){(function(i){
-    var p=document.createElement('div');
-    var ang=(Math.PI*2*i)/58+Math.random()*.4, dist=85+Math.random()*185, sz=3+Math.random()*7;
-    p.style.cssText='position:absolute;left:'+x+'px;top:'+y+'px;width:'+sz+'px;height:'+sz+'px;'+
-      'margin:'+(-sz/2)+'px 0 0 '+(-sz/2)+'px;border-radius:50%;background:'+colors[i%colors.length]+
-      ';box-shadow:0 0 14px '+colors[i%colors.length]+
-      ';transition:transform 1.25s cubic-bezier(.12,.85,.25,1),opacity 1.25s ease-out';
-    fx.appendChild(p);
-    requestAnimationFrame(function(){
-      p.style.transform='translate('+Math.cos(ang)*dist+'px,'+(Math.sin(ang)*dist+58)+'px) scale(.15)';
-      p.style.opacity='0';
-    });
-    setTimeout(function(){ if(p.parentNode) p.parentNode.removeChild(p); },1320);
-  })(i);}
+  var S = scale||1;
+  var vw = window.innerWidth, vh = window.innerHeight;
+  var reach = Math.min(vw,vh) * 0.52 * S;
+  var colors=['#22D3FF','#5EC8FF','#0A84FF','#9E7BFF','#C4A0FF','#FFB454','#FFD98A','#4ADE80','#7BF0B8','#FF6FA5'];
+  var n = Math.round(96*S);
+
+  for(var i=0;i<n;i++){
+    (function(i){
+      var p=document.createElement('div');
+      var ang  = (Math.PI*2*i)/n + Math.random()*0.5;
+      var dist = reach*(0.35+Math.random()*0.65);
+      var sz   = 3+Math.random()*8;
+      var col  = colors[i%colors.length];
+      var life = 1500+Math.random()*600;
+      p.style.cssText='position:absolute;left:'+x+'px;top:'+y+'px;width:'+sz+'px;height:'+sz+'px;'+
+        'margin:'+(-sz/2)+'px 0 0 '+(-sz/2)+'px;border-radius:50%;pointer-events:none;'+
+        'background:'+col+';opacity:.95;'+
+        'box-shadow:0 0 '+(sz*2.6)+'px '+col+', 0 0 '+(sz*5)+'px '+col+';'+
+        'transition:transform '+life+'ms cubic-bezier(.08,.82,.2,1),opacity '+life+'ms ease-out';
+      fx.appendChild(p);
+      requestAnimationFrame(function(){
+        /* gravity: horizontal spread plus a downward drift on the way out */
+        p.style.transform='translate('+(Math.cos(ang)*dist)+'px,'+
+          (Math.sin(ang)*dist + reach*0.34)+'px) scale(.12)';
+        p.style.opacity='0';
+      });
+      setTimeout(function(){ if(p.parentNode) p.parentNode.removeChild(p); },life+120);
+    })(i);
+  }
 }
+
+function bigShow(cx,cy){
+  /* four bursts spread across the page, spaced 380ms apart.
+     That is 2.6 bursts per second — under the 3-per-second flash threshold. */
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var vw=window.innerWidth, vh=window.innerHeight;
+  fireworks(cx, cy, 1.15);
+  setTimeout(function(){ fireworks(vw*0.26, vh*0.30, 1.35); },  380);
+  setTimeout(function(){ fireworks(vw*0.74, vh*0.22, 1.30); },  760);
+  setTimeout(function(){ fireworks(vw*0.50, vh*0.46, 1.45); }, 1140);
+}
+
 function dust(x,y){
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  for(var i=0;i<16;i++){(function(i){
-    var side=i%2?1:-1, p=document.createElement('div'), sz=10+Math.random()*26;
+  for(var i=0;i<24;i++){(function(i){
+    var side=i%2?1:-1, p=document.createElement('div'), sz=14+Math.random()*38;
     p.style.cssText='position:absolute;left:'+x+'px;top:'+y+'px;width:'+sz+'px;height:'+sz+'px;'+
       'margin:'+(-sz/2)+'px 0 0 '+(-sz/2)+'px;border-radius:50%;pointer-events:none;'+
       'background:radial-gradient(circle,rgba(214,230,248,.55),rgba(150,180,215,.12) 70%,transparent 100%);'+
       'transition:transform .85s cubic-bezier(.1,.8,.3,1),opacity .85s ease-out';
     fx.appendChild(p);
     requestAnimationFrame(function(){
-      p.style.transform='translate('+(side*(24+Math.random()*88))+'px,'+(-6-Math.random()*26)+'px) scale('+(1.9+Math.random()*1.5)+')';
+      p.style.transform='translate('+(side*(34+Math.random()*150))+'px,'+(-8-Math.random()*40)+'px) scale('+(2.3+Math.random()*2.1)+')';
       p.style.opacity='0';
     });
     setTimeout(function(){ if(p.parentNode) p.parentNode.removeChild(p); },900);
@@ -315,19 +458,17 @@ function arrive(){
     var r=launch.getBoundingClientRect(), cx=r.left+r.width/2;
     launch.classList.add('squashing');
     dust(cx,r.bottom-6);
-    fireworks(cx,r.top+r.height*0.42);
-    setTimeout(function(){ fireworks(cx-40,r.top-30); },260);
-    setTimeout(function(){ fireworks(cx+46,r.top-8); },430);
+    bigShow(cx, r.top+r.height*0.42);
     setTimeout(function(){ launch.classList.remove('squashing'); launch.classList.add('bobbing'); },720);
   },3200);
 }
-function portalExit(){
+function portalExit(after){
   closeChat();
   if(launch.dataset.busy==='1') return;
   launch.dataset.busy='1';
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
     launch.style.opacity='0';
-    setTimeout(function(){ launch.style.opacity='1'; launch.dataset.busy=''; },700); return;
+    setTimeout(function(){ launch.style.opacity='1'; launch.dataset.busy=''; if(after)after(); else arrive(); },700); return;
   }
   var r=launch.getBoundingClientRect(), bx=r.left+r.width/2, by=r.top+r.height/2;
   var tx=window.innerWidth*0.5, ty=window.innerHeight*0.13;
@@ -365,7 +506,7 @@ function portalExit(){
               setTimeout(function(){
                 portal.style.display='none'; portal.style.animation='none';
                 launch.style.transition='none'; launch.style.transform='none'; launch.style.opacity='0';
-                setTimeout(function(){ launch.style.opacity='1'; launch.dataset.busy=''; arrive(); },800);
+                setTimeout(function(){ launch.style.opacity='1'; launch.dataset.busy=''; if(after){after();} else {arrive();} },800);
               },600);
             },780);
           },350);
@@ -381,7 +522,30 @@ QUICK.forEach(function(q){
   quick.appendChild(b);
 });
 launch.addEventListener('click',function(){ panel.classList.contains('on')?closeChat():openChat(); });
-document.getElementById('closeBtn').addEventListener('click',portalExit);
+document.getElementById('closeBtn').addEventListener('click',closeChat);
+
+  /* dismiss: portal exit, then she stays gone for this browsing session */
+  var dock=document.getElementById('dock'), recall=document.getElementById('recall');
+  function gone(){
+    dock.style.display='none';
+    recall.classList.add('on');
+    try{ sessionStorage.setItem('coraDismissed','1'); }catch(e){}
+  }
+  function back(){
+    try{ sessionStorage.removeItem('coraDismissed'); }catch(e){}
+    recall.classList.remove('on');
+    dock.style.display='';
+    arrive();
+  }
+  document.getElementById('dismiss').addEventListener('click',function(e){
+    e.stopPropagation();
+    portalExit(gone);
+  });
+  recall.addEventListener('click',back);
+
+  var wasDismissed=false;
+  try{ wasDismissed = sessionStorage.getItem('coraDismissed')==='1'; }catch(e){}
+  if(wasDismissed){ dock.style.display='none'; recall.classList.add('on'); }
 document.getElementById('send').addEventListener('click',function(){
   var v=inp.value.trim(); if(!v) return; inp.value=''; ask(v); });
 inp.addEventListener('keydown',function(e){
@@ -395,11 +559,22 @@ document.addEventListener('click',function(e){
 });
 
 paintChar();
-setTimeout(arrive,500);
+if(!wasDismissed) setTimeout(arrive,500);
 }
 
 /* ---- self-mounting: builds its own styles and markup ---- */
-var CSS = "\n#dock{position:fixed;right:20px;bottom:18px;z-index:60;width:96px;height:115px}\n#launch{width:96px;height:115px;border:0;cursor:pointer;padding:0;background:transparent;position:relative;display:block}\n#launch svg{width:96px;height:115px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.5)) drop-shadow(0 0 26px rgba(34,211,255,.3))}\n#launch:hover{transform:scale(1.06)}\n#launch{transition:transform .2s}\n\n#panel{position:fixed;right:20px;bottom:142px;z-index:59;width:352px;max-width:calc(100vw - 44px);\n  background:#fff;border-radius:18px;box-shadow:0 24px 64px rgba(0,0,0,.5);overflow:hidden;\n  display:none;flex-direction:column;max-height:min(560px,calc(100vh - 186px));\n  transform-origin:bottom right}\n#panel.on{display:flex;animation:panelIn .34s cubic-bezier(.2,1.3,.4,1)}\n@keyframes panelIn{0%{opacity:0;transform:translateY(18px) scale(.9)}100%{opacity:1;transform:none}}\n.phead{background:linear-gradient(135deg,var(--signal),#0B5ED7);color:#fff;padding:13px 15px;display:flex;align-items:center;gap:11px}\n.phead svg{width:38px;height:38px;flex:0 0 38px}\n.phead b{display:block;font-family:var(--display);font-size:15px;line-height:1.2}\n.phead em{font-style:normal;font-size:11.5px;opacity:.9;display:flex;align-items:center;gap:5px}\n.phead em u{width:6px;height:6px;border-radius:50%;background:#4ADE80;display:inline-block;text-decoration:none}\n.pclose{margin-left:auto;background:transparent;border:0;color:#fff;font-size:24px;line-height:1;cursor:pointer;opacity:.85;padding:0 3px}\n.pclose:hover{opacity:1}\n.pmsgs{flex:1;overflow-y:auto;padding:14px;background:#F5F8FC;min-height:190px}\n.bub{max-width:82%;padding:10px 14px;border-radius:15px;margin-bottom:9px;font-size:13.8px;line-height:1.5;\n  white-space:pre-wrap;overflow-wrap:anywhere;animation:bubIn .26s ease both}\n@keyframes bubIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}\n.bub.bot{background:#fff;color:#17202E;border-bottom-left-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,.08)}\n.bub.me{background:var(--signal);color:#fff;margin-left:auto;border-bottom-right-radius:4px}\n.typing{display:flex;gap:4px;padding:12px 14px;background:#fff;border-radius:15px;width:54px;\n  box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:9px}\n.typing s{width:6px;height:6px;border-radius:50%;background:#B9C3D1;text-decoration:none;animation:blink 1.3s infinite}\n.typing s:nth-child(2){animation-delay:.18s}.typing s:nth-child(3){animation-delay:.36s}\n@keyframes blink{0%,60%,100%{opacity:.3}30%{opacity:1}}\n/* quick replies \u2014 constrained so nothing can escape the bubble */\n.pquick{padding:10px 12px;border-top:1px solid #E8EDF3;background:#fff;display:flex;flex-wrap:wrap;gap:6px;\n  max-height:112px;overflow-y:auto}\n.pquick button{border:1px solid var(--signal);color:var(--signal);background:#fff;border-radius:999px;\n  padding:7px 13px;font-size:12.5px;cursor:pointer;line-height:1.3;text-align:left;\n  max-width:100%;overflow-wrap:anywhere;font-family:var(--body)}\n.pquick button:hover{background:var(--signal);color:#fff}\n.pinput{display:flex;gap:7px;padding:10px 12px;border-top:1px solid #E8EDF3;background:#fff}\n.pinput input{flex:1;min-width:0;border:1px solid #DCE3EC;border-radius:999px;padding:9px 14px;font-size:13.5px;\n  color:#17202E;font-family:var(--body);background:#fff}\n.pinput input:focus{outline:2px solid rgba(10,132,255,.35);outline-offset:0;border-color:var(--signal)}\n.pinput button{flex:0 0 38px;width:38px;height:38px;border-radius:50%;border:0;background:var(--signal);color:#fff;cursor:pointer;font-size:15px}\n.pfoot{font-size:10.5px;color:#93A0B4;text-align:center;padding:7px;background:#fff;border-top:1px solid #F0F3F7}\n\n\n@keyframes rollIn{\n  0%  {transform:translate(-90vw,-34vh) rotate(-1080deg) scale(.22);opacity:0}\n  10% {opacity:1}\n  30% {transform:translate(-42vw,-6vh)  rotate(-620deg) scale(.75)}\n  48% {transform:translate(-14vw,14vh)  rotate(-240deg) scale(1.05)}\n  62% {transform:translate(26px,40px)   rotate(46deg)   scale(1.3)}\n  72% {transform:translate(-18px,-26px) rotate(-30deg)  scale(.86)}\n  81% {transform:translate(11px,17px)   rotate(19deg)   scale(1.12)}\n  88% {transform:translate(-6px,-9px)   rotate(-11deg)  scale(.95)}\n  94% {transform:translate(3px,4px)     rotate(5deg)    scale(1.04)}\n  100%{transform:none;opacity:1}\n}\n.rolling{animation:rollIn 3.2s cubic-bezier(.18,.72,.3,1) both}\n.wave{animation:waveArm 2.6s ease-in-out infinite;transform-box:fill-box}\n@keyframes waveArm{0%,62%,100%{transform:rotate(0)}72%{transform:rotate(-19deg)}82%{transform:rotate(9deg)}92%{transform:rotate(-11deg)}}\n@keyframes squashLand{0%{transform:scale(1,1)}22%{transform:scale(1.28,.72)}48%{transform:scale(.88,1.14)}70%{transform:scale(1.08,.94)}86%{transform:scale(.97,1.03)}100%{transform:scale(1,1)}}\n.squashing{animation:squashLand .72s cubic-bezier(.3,1.1,.4,1) both;transform-origin:50% 100%}\n@keyframes idleBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}\n.bobbing{animation:idleBob 3.4s ease-in-out infinite}\n@keyframes intoPortal{\n  0%{transform:none;opacity:1}\n  22%{transform:translateY(-30px) rotate(-14deg) scale(1.12)}\n  48%{transform:translateY(-46px) rotate(12deg) scale(1.05)}\n  100%{transform:translateY(6px) rotate(760deg) scale(.02);opacity:.2}\n}\n.diving{animation:intoPortal .9s cubic-bezier(.5,-0.3,.75,1) both}\n#portal{position:fixed;z-index:58;border-radius:50%;pointer-events:none;\n  background:radial-gradient(circle,#000 38%,#1b0f3d 62%,rgba(90,40,200,.55) 80%,transparent 100%);\n  box-shadow:0 0 46px 12px rgba(120,60,255,.5);display:none}\n@keyframes portalOpen{\n  0%{transform:translate(-50%,-50%) scale(0) rotate(0);opacity:0}\n  35%{opacity:1}\n  65%{transform:translate(-50%,-50%) scale(1.22) rotate(200deg)}\n  100%{transform:translate(-50%,-50%) scale(1) rotate(330deg);opacity:1}}\n@keyframes portalSpin{to{transform:translate(-50%,-50%) scale(1) rotate(690deg)}}\n@keyframes portalShut{0%{transform:translate(-50%,-50%) scale(1) rotate(300deg);opacity:1}\n  100%{transform:translate(-50%,-50%) scale(0) rotate(560deg);opacity:0}}\n#fx{position:fixed;inset:0;z-index:57;pointer-events:none}\n@media (prefers-reduced-motion:reduce){\n  .rolling,.bobbing,.diving,.squashing,.wave{animation:none!important}\n  #panel.on{animation:none}\n  .bub{animation:none}\n}\n@media(max-width:560px){\n  #panel{right:12px;left:12px;width:auto;bottom:132px}\n  #dock{right:10px;bottom:10px;width:84px;height:100px}\n  #launch,#launch svg{width:84px;height:100px}}";
+var CSS = "#dismiss{position:absolute;top:2px;right:-2px;z-index:2;width:26px;height:26px;border-radius:50%;"
+  +"border:1px solid rgba(255,255,255,.28);background:#0E1E3C;color:#CFE3FA;font-size:16px;line-height:1;"
+  +"cursor:pointer;padding:0;opacity:0;transform:scale(.7);transition:opacity .18s,transform .18s;}"
+  +"#dock:hover #dismiss,#dismiss:focus-visible{opacity:1;transform:scale(1);}"
+  +"#dismiss:hover{background:#E0632F;color:#fff;border-color:#E0632F;}"
+  +"@media(hover:none){#dismiss{opacity:1;transform:scale(1);}}"
+  +"#recall{position:fixed;right:0;bottom:78px;z-index:60;display:none;border:0;cursor:pointer;"
+  +"background:linear-gradient(180deg,#3AA0FF,#0A6FE0);color:#fff;font-family:'Space Grotesk',system-ui,sans-serif;"
+  +"font-weight:600;font-size:13px;padding:10px 14px;border-radius:10px 0 0 10px;box-shadow:0 6px 20px rgba(0,0,0,.35);}"
+  +"#recall.on{display:block;}"
+  +"#recall:hover{padding-right:20px;}"
+  +"\n#dock{position:fixed;right:20px;bottom:18px;z-index:60;width:96px;height:115px}\n#launch{width:96px;height:115px;border:0;cursor:pointer;padding:0;background:transparent;position:relative;display:block}\n#launch svg{width:96px;height:115px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.5)) drop-shadow(0 0 26px rgba(34,211,255,.3))}\n#launch:hover{transform:scale(1.06)}\n#launch{transition:transform .2s}\n\n#panel{position:fixed;right:20px;bottom:142px;z-index:59;width:352px;max-width:calc(100vw - 44px);\n  background:#fff;border-radius:18px;box-shadow:0 24px 64px rgba(0,0,0,.5);overflow:hidden;\n  display:none;flex-direction:column;max-height:min(560px,calc(100vh - 186px));\n  transform-origin:bottom right}\n#panel.on{display:flex;animation:panelIn .34s cubic-bezier(.2,1.3,.4,1)}\n@keyframes panelIn{0%{opacity:0;transform:translateY(18px) scale(.9)}100%{opacity:1;transform:none}}\n.phead{background:linear-gradient(135deg,var(--signal),#0B5ED7);color:#fff;padding:13px 15px;display:flex;align-items:center;gap:11px}\n.phead svg{width:38px;height:38px;flex:0 0 38px}\n.phead b{display:block;font-family:var(--display);font-size:15px;line-height:1.2}\n.phead em{font-style:normal;font-size:11.5px;opacity:.9;display:flex;align-items:center;gap:5px}\n.phead em u{width:6px;height:6px;border-radius:50%;background:#4ADE80;display:inline-block;text-decoration:none}\n.pclose{margin-left:auto;background:transparent;border:0;color:#fff;font-size:24px;line-height:1;cursor:pointer;opacity:.85;padding:0 3px}\n.pclose:hover{opacity:1}\n.pmsgs{flex:1;overflow-y:auto;padding:14px;background:#F5F8FC;min-height:190px}\n.bub{max-width:82%;padding:10px 14px;border-radius:15px;margin-bottom:9px;font-size:13.8px;line-height:1.5;\n  white-space:pre-wrap;overflow-wrap:anywhere;animation:bubIn .26s ease both}\n@keyframes bubIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}\n.bub.bot{background:#fff;color:#17202E;border-bottom-left-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,.08)}\n.bub.me{background:var(--signal);color:#fff;margin-left:auto;border-bottom-right-radius:4px}\n.typing{display:flex;gap:4px;padding:12px 14px;background:#fff;border-radius:15px;width:54px;\n  box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:9px}\n.typing s{width:6px;height:6px;border-radius:50%;background:#B9C3D1;text-decoration:none;animation:blink 1.3s infinite}\n.typing s:nth-child(2){animation-delay:.18s}.typing s:nth-child(3){animation-delay:.36s}\n@keyframes blink{0%,60%,100%{opacity:.3}30%{opacity:1}}\n/* quick replies \u2014 constrained so nothing can escape the bubble */\n.pquick{padding:10px 12px;border-top:1px solid #E8EDF3;background:#fff;display:flex;flex-wrap:wrap;gap:6px;\n  max-height:112px;overflow-y:auto}\n.pquick button{border:1px solid var(--signal);color:var(--signal);background:#fff;border-radius:999px;\n  padding:7px 13px;font-size:12.5px;cursor:pointer;line-height:1.3;text-align:left;\n  max-width:100%;overflow-wrap:anywhere;font-family:var(--body)}\n.pquick button:hover{background:var(--signal);color:#fff}\n.pinput{display:flex;gap:7px;padding:10px 12px;border-top:1px solid #E8EDF3;background:#fff}\n.pinput input{flex:1;min-width:0;border:1px solid #DCE3EC;border-radius:999px;padding:9px 14px;font-size:13.5px;\n  color:#17202E;font-family:var(--body);background:#fff}\n.pinput input:focus{outline:2px solid rgba(10,132,255,.35);outline-offset:0;border-color:var(--signal)}\n.pinput button{flex:0 0 38px;width:38px;height:38px;border-radius:50%;border:0;background:var(--signal);color:#fff;cursor:pointer;font-size:15px}\n.pfoot{font-size:10.5px;color:#93A0B4;text-align:center;padding:7px;background:#fff;border-top:1px solid #F0F3F7}\n\n\n@keyframes rollIn{\n  0%  {transform:translate(-90vw,-34vh) rotate(-1080deg) scale(.22);opacity:0}\n  10% {opacity:1}\n  30% {transform:translate(-42vw,-6vh)  rotate(-620deg) scale(.75)}\n  48% {transform:translate(-14vw,14vh)  rotate(-240deg) scale(1.05)}\n  62% {transform:translate(26px,40px)   rotate(46deg)   scale(1.3)}\n  72% {transform:translate(-18px,-26px) rotate(-30deg)  scale(.86)}\n  81% {transform:translate(11px,17px)   rotate(19deg)   scale(1.12)}\n  88% {transform:translate(-6px,-9px)   rotate(-11deg)  scale(.95)}\n  94% {transform:translate(3px,4px)     rotate(5deg)    scale(1.04)}\n  100%{transform:none;opacity:1}\n}\n.rolling{animation:rollIn 3.2s cubic-bezier(.18,.72,.3,1) both}\n.wave{animation:waveArm 2.6s ease-in-out infinite;transform-box:fill-box}\n@keyframes waveArm{0%,62%,100%{transform:rotate(0)}72%{transform:rotate(-19deg)}82%{transform:rotate(9deg)}92%{transform:rotate(-11deg)}}\n@keyframes squashLand{0%{transform:scale(1,1)}22%{transform:scale(1.28,.72)}48%{transform:scale(.88,1.14)}70%{transform:scale(1.08,.94)}86%{transform:scale(.97,1.03)}100%{transform:scale(1,1)}}\n.squashing{animation:squashLand .72s cubic-bezier(.3,1.1,.4,1) both;transform-origin:50% 100%}\n@keyframes idleBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}\n.bobbing{animation:idleBob 3.4s ease-in-out infinite}\n@keyframes intoPortal{\n  0%{transform:none;opacity:1}\n  22%{transform:translateY(-30px) rotate(-14deg) scale(1.12)}\n  48%{transform:translateY(-46px) rotate(12deg) scale(1.05)}\n  100%{transform:translateY(6px) rotate(760deg) scale(.02);opacity:.2}\n}\n.diving{animation:intoPortal .9s cubic-bezier(.5,-0.3,.75,1) both}\n#portal{position:fixed;z-index:58;border-radius:50%;pointer-events:none;\n  background:radial-gradient(circle,#000 38%,#1b0f3d 62%,rgba(90,40,200,.55) 80%,transparent 100%);\n  box-shadow:0 0 46px 12px rgba(120,60,255,.5);display:none}\n@keyframes portalOpen{\n  0%{transform:translate(-50%,-50%) scale(0) rotate(0);opacity:0}\n  35%{opacity:1}\n  65%{transform:translate(-50%,-50%) scale(1.22) rotate(200deg)}\n  100%{transform:translate(-50%,-50%) scale(1) rotate(330deg);opacity:1}}\n@keyframes portalSpin{to{transform:translate(-50%,-50%) scale(1) rotate(690deg)}}\n@keyframes portalShut{0%{transform:translate(-50%,-50%) scale(1) rotate(300deg);opacity:1}\n  100%{transform:translate(-50%,-50%) scale(0) rotate(560deg);opacity:0}}\n#fx{position:fixed;inset:0;z-index:57;pointer-events:none;overflow:hidden}\n@media (prefers-reduced-motion:reduce){\n  .rolling,.bobbing,.diving,.squashing,.wave{animation:none!important}\n  #panel.on{animation:none}\n  .bub{animation:none}\n}\n@media(max-width:560px){\n  #panel{right:12px;left:12px;width:auto;bottom:132px}\n  #dock{right:10px;bottom:10px;width:84px;height:100px}\n  #launch,#launch svg{width:84px;height:100px}}";
 
 function mount(){
   if(document.getElementById('cora-dock')) return;
@@ -408,7 +583,7 @@ function mount(){
   var host=document.createElement('div');
   host.innerHTML =
     '<div id="fx"></div><div id="portal"></div>'+
-    '<div id="dock"><button id="launch" aria-label="Chat with Cora"></button></div>'+
+    '<div id="dock"><button id="launch" aria-label="Chat with Cora"></button>'+'<button id="dismiss" type="button" aria-label="Dismiss Cora" title="Dismiss">&times;</button></div>'+'<button id="recall" type="button" aria-label="Bring Cora back">Chat</button>'+
     '<div id="panel" role="dialog" aria-label="Chat with Cora">'+
       '<div class="phead"><span id="headArt"></span>'+
         '<div><b id="headName">Cora</b><em><u></u><span id="headRole">Programmed by a human, not an AI</span></em></div>'+
