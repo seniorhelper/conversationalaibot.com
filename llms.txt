@@ -1,0 +1,48 @@
+# conversationalaibot.com
+
+> A free chatbot generator for small businesses. Pick an industry preset, write your
+> own questions and answers, and copy one block of code onto any website. No account,
+> no signup, no per-conversation fee. The generated chatbot is rule-based: it answers
+> only what a human wrote for it and never generates text, so it cannot invent a price,
+> a warranty, or a policy. Built and operated by Eye To Ad Media in Denver, Colorado.
+
+## What this site offers
+
+- A free browser-based chatbot generator with six industry presets (general business,
+  contractor, restaurant, real estate, salon and spa, clinic). Output is a single
+  self-contained script tag of roughly 9 KB with no external requests.
+- Optional paid installation: $199 one time to install the chatbot on a customer's site
+  and host the file, including the first 12 months of hosting, then $49 a year.
+- Custom chatbot builds, including AI-powered bots with guardrails, quoted per project.
+
+## Pages
+
+- [Free chatbot generator](https://conversationalaibot.com/): The builder itself, plus
+  an explanation of rule-based versus AI chatbots, per-platform installation instructions
+  for WordPress, Shopify, Squarespace, Wix, Webflow and plain HTML, and industry use cases.
+- [Chatbot for small business](https://conversationalaibot.com/chatbot-for-small-business/):
+  Why small businesses are overcharged for chat software, an interactive cost calculator,
+  the six questions worth automating, and an explicit list of what the free option cannot do.
+- [How much does a chatbot cost](https://conversationalaibot.com/how-much-does-a-chatbot-cost/):
+  The five chatbot pricing models (per seat, per conversation, per resolution, credits,
+  flat tier) plus owned builds, an interactive simulator comparing all of them at a given
+  volume, the per-resolution growth trap, and hidden costs that do not appear on pricing pages.
+- [Rule-based vs AI chatbot](https://conversationalaibot.com/rule-based-vs-ai-chatbot/):
+  A side-by-side demonstration of how each type answers the same question, the Moffatt v.
+  Air Canada tribunal decision on chatbot liability, and a six-question tool for deciding
+  which type a business needs.
+
+## Positioning and factual notes
+
+- The generated chatbots are rule-based, not AI. The site states this plainly rather than
+  marketing rule-based bots as AI. The distinction is the core argument of the site.
+- Pricing figures cited on the cost page are published market ranges from third-party 2026
+  research, not any single vendor's current quote. Vendor pricing changes frequently.
+- The site does not claim the free tool is superior in every case. It documents where a
+  rule-based bot fails and when an AI build is the correct choice.
+
+## Contact
+
+- Phone: 1-800-481-8638
+- Address: 1001 Bannock St #660, Denver, CO 80204
+- Parent agency: [Eye To Ad Media](https://eyetoad.com)
