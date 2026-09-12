@@ -1,0 +1,15 @@
+# conversationalaibot.com
+User-agent: *
+Allow: /
+
+# AI crawlers are welcome — this is a free tool, we want it cited
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://conversationalaibot.com/sitemap.xml
