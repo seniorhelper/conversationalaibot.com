@@ -31,6 +31,11 @@
   A side-by-side demonstration of how each type answers the same question, the Moffatt v.
   Air Canada tribunal decision on chatbot liability, and a six-question tool for deciding
   which type a business needs.
+- [AI agent vs chatbot](https://conversationalaibot.com/ai-agent-vs-chatbot/):
+  The difference between a chatbot (converses and answers) and an AI agent (takes actions
+  in other systems to finish a task), a scripted three-lane demo of one customer request,
+  a comparison table, signs a business has outgrown its chatbot, and a one-action-at-a-time
+  upgrade path with human approval rules.
 
 ## Positioning and factual notes
 
