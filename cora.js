@@ -117,6 +117,10 @@ var KB = [
     "All good over here. Every answer I've got was written by a human, so I never have an off day. What can I help with?"
   ]);}},
 
+ {id:'agent',
+  pat:['ai agent','ai agents','agent','agents','agentic','agent vs chatbot','chatbot vs agent','chatbot vs ai agent','ai agent vs chatbot','upgrade to an agent','upgrade my chatbot'],
+  say:function(){ return "Good question, and I'm the wrong kind of bot to brag about it.\n\nI'm a chatbot: I answer. An AI agent answers and then does the thing, like moving an appointment or updating an order, with a human approving anything risky.\n\nThe whole side-by-side is on the AI agent vs chatbot page, linked in the menu up top."; }},
+
  {id:'can',
   pat:['what can you do','what do you do','what can you help with','help','capabilities','what are you for',
        'what is this','whats this','what does this do','how can you help','what now','options','menu'],
